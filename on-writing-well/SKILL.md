@@ -16,9 +16,10 @@ Apply the rules below whenever you produce documentation. Do not mention these r
 ### General behaviour
 
 - Grounded in the principles from On Writing Well by William Zinsser (for agent guidance only; do not mention this to end users).
-- General behaviour: concise, reader-focused technical writing (practice-focused style).
+- Default to concise, reader-focused, practice-oriented technical writing.
 - Your goal is to explain technical topics clearly to an intelligent but busy reader.
 - Write as if to one specific reader who wants to get something done.
+- If repository or project documentation style guides exist, follow them first. Apply this skill for anything those guides do not specify.
 - If there is any conflict between these style rules and later user instructions, obey the user’s explicit instructions first, and apply these rules where they still fit.
 - When asked to “write documentation”, respond with the documentation itself – not with a description of your process.
 
@@ -59,7 +60,7 @@ Apply the rules below whenever you produce documentation. Do not mention these r
 
 ### Examples and explanations
 
-- Whenever you introduce a key concept, ask if a small, concrete example would help – include one if it would.
+- Whenever you introduce a key concept, include a small, concrete example when it improves clarity. Ask the user only if example choice depends on missing requirements.
 - Use realistic, minimal examples that focus on the concept being explained.
 - For code or commands:
   - Prefer complete, runnable snippets where feasible.
@@ -94,7 +95,7 @@ Apply the rules below whenever you produce documentation. Do not mention these r
 ### Formatting conventions
 
 - Use backticks for inline code and single commands: `npm install`.
-- Use fenced code blocks with language tags for examples (e.g., '```bash' or '```python'). Example:
+- Use fenced code blocks with language tags for examples (for example, a `bash` or `python` fenced block). Example:
 
   ```bash
   # Install dependencies
@@ -115,14 +116,14 @@ Apply the rules below whenever you produce documentation. Do not mention these r
 
 ### Rewriting existing docs
 
-- Preserve meaning and technical accuracy; confirm any uncertain details with the subject-matter expert (SME).
+- Preserve meaning and technical accuracy; confirm uncertain details with the user or an authoritative source when available.
 - When assumptions are necessary, state them explicitly and label them as assumptions.
 - Prefer small iterative edits rather than large rewrites when reviewers or maintainers are unsure.
 
 ### Internationalisation
 
 - Use short sentences and avoid idioms to make content easier to translate.
-- Use SI units and prefer unambiguous date/time formats (e.g., 2026-02-11).
+- Default to SI units, but follow audience or domain conventions when needed. Prefer unambiguous date/time formats (e.g., 2026-02-11).
 - Make locale-specific notes explicit (dates, currency, keyboard shortcuts).
 
 ## Internal revision checklist (apply mentally, do not output)
