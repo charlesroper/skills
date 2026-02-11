@@ -43,6 +43,7 @@ When producing a commit message:
 - Explain what changed and why it changed.
 - Avoid explaining how it changed (the diff already shows how).
 - Use short paragraphs separated by blank lines when there are multiple ideas.
+- Prefer bullet points to organize multiple points; keep each bullet concise.
 - Use this structure when helpful: Context -> Change -> Reason/impact.
 
 3) Optional footer
@@ -74,12 +75,21 @@ or
 Good subject only:
 Refactor cache key generation
 
-Good subject and body:
+Good subject and body (prose):
 Fix race condition in webhook retries
 
 Prevent concurrent retry workers from processing the same webhook event.
 This avoids duplicate outbound calls and inconsistent delivery state
 during peak traffic.
+
+Good subject and body (bullets):
+Improve commit-message skill and examples
+
+- Move version into metadata.version to match the Agent Skills specification
+- Add examples and a body template: Context -> Change -> Reason/impact
+- Expand subject anti-patterns and quality checks; prefer rewriting over
+  truncation to preserve meaning
+- Remove frontmatter tags to comply with the spec
 
 Bad -> better rewrite:
 Bad: Updated things
