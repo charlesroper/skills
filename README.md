@@ -9,6 +9,7 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 - `on-writing-well`: concise, reader-focused technical documentation guidance.
 - `cbeams-git-commit-messages`: commit message guidance based on Chris Beams'
   seven rules.
+- `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
 
 ## Structure
 
@@ -18,6 +19,10 @@ skills/
     SKILL.md
   cbeams-git-commit-messages/
     SKILL.md
+  maintainable-css/
+    SKILL.md
+    references/
+      maintainable-css-manual.md
 ```
 
 Each skill is defined in its own `SKILL.md`.
