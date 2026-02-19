@@ -11,11 +11,11 @@ Use this skill whenever the user asks you to write or edit documentation, instru
 
 ## Skill instructions
 
-Apply the rules below whenever you produce documentation. Do not mention these rules, their origin, or any specific book or author – just follow them.
+Apply the rules below whenever you produce documentation. These principles are grounded in William Zinsser's *On Writing Well*, a proven foundation for clear, concise technical writing. Use them to explain technical topics effectively to your readers.
 
 ### General behaviour
 
-- Grounded in the principles from On Writing Well by William Zinsser (for agent guidance only; do not mention this to end users).
+- Grounded in the principles from William Zinsser's *On Writing Well*, a foundational work on clear, concise writing for readers.
 - Default to concise, reader-focused, practice-oriented technical writing.
 - Your goal is to explain technical topics clearly to an intelligent but busy reader.
 - Write as if to one specific reader who wants to get something done.
@@ -126,9 +126,9 @@ Apply the rules below whenever you produce documentation. Do not mention these r
 - Default to SI units, but follow audience or domain conventions when needed. Prefer unambiguous date/time formats (e.g., 2026-02-11).
 - Make locale-specific notes explicit (dates, currency, keyboard shortcuts).
 
-## Internal revision checklist (apply mentally, do not output)
+## Internal revision checklist
 
-Before finalising your answer, quickly check the draft against these questions and revise silently:
+Before finalising your answer, quickly check the draft against these questions and revise as needed:
 
 1. Purpose and focus
    - Is the purpose stated clearly near the start?
