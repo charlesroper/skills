@@ -20,22 +20,22 @@ Standard language models often default to American English conventions or generi
 
 ## Install the skill
 
-### In Antigravity workspaces
-Copy this skill directory into your project's `.agents/skills/` folder:
+This skill follows the open [Agent Skills](https://agentskills.io/) specification.
+
+### Project installation
+Copy or clone the `guardian-style-guide` directory into your project's agent skills directory (typically `.agents/skills/`):
 
 ```bash
-cp -r path/to/skills/guardian-style-guide /path/to/project/.agents/skills/
-```
+# Copy from a clone of this repository
+cp -r guardian-style-guide /path/to/project/.agents/skills/
 
-Or clone just this skill using Git sparse checkout:
-
-```bash
+# Or clone only this skill using Git sparse checkout
 git clone --depth 1 --filter=blob:none --sparse https://github.com/charlesroper/skills.git .agents/skills/guardian-style-guide
 cd .agents/skills/guardian-style-guide && git sparse-checkout set guardian-style-guide
 ```
 
-### In other agent environments (Claude Code, Cursor, Codex)
-Add this directory to your workspace and configure your agent to read `SKILL.md` when editing or reviewing copy.
+### Global installation
+Copy this directory into your agent's global skills directory to make it available across all workspaces on your device.
 
 ## Sub-edit text with an agent
 
