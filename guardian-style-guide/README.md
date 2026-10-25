@@ -50,13 +50,21 @@ The agent applies core house mechanics, consults `references/` for edge cases, a
 
 ## Update reference data from the Guardian
 
-To refresh the local reference files with the latest entries from the Guardian website:
+A scheduled GitHub Actions workflow checks for upstream changes every Sunday evening and opens a pull request when differences are detected.
+
+To refresh local reference files manually:
 
 1. Install [uv](https://docs.astral.sh/uv/) if you do not have it installed.
 2. Run the update script to download all four volumes:
 
 ```bash
 uv run guardian_style_guide.py
+```
+
+The script rewrites files only when substantive entries have changed. To force rewrite files regardless of changes, pass `--force`:
+
+```bash
+uv run guardian_style_guide.py --force
 ```
 
 To test a single letter:
