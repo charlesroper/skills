@@ -4,11 +4,14 @@ An agent skill and reference library for copy-editing text to *The Guardian and 
 
 ## Why use this skill
 
-Standard language models often default to American English conventions or generic corporate phrasing. This skill directs agents to:
+Maintained for decades and published online in the early 2000s, [The Guardian and Observer Style Guide](https://www.theguardian.com/info/series/the-guardian-style-guide) is one of the most widely referenced journalism stylebooks in the English-speaking world. Long championed by style editor David Marsh as *"neither pedantic nor wild"*, its philosophy treats language as a living tool—prioritising plain English clarity, ethical precision, and readability without crushing an author's individual voice.
+
+Standard language models default to American English conventions, bureaucratic jargon, or breathless broadsheet clichés. This skill directs agents to:
 - **Enforce British English spelling:** Use `-ise`, `-our`, `-re`, and doubled `l` forms (`organise`, `colour`, `centre`, `travelled`).
-- **Apply down-style capitalisation:** Lowercase `government`, `cabinet`, political party nouns (`Labour party`), and job titles (`prime minister`).
-- **Format punctuation to house style:** Use spaced en-dashes (`–`) for parenthetical pauses, strip serial/Oxford commas in simple lists, and use double quotes with British nesting.
+- **Apply down-style capitalisation:** Lowercase `government`, `cabinet`, political parties (`Labour party`), and job descriptions (`prime minister`), rejecting false titles and institutional inflation.
+- **Format punctuation to house style:** Use spaced en-dashes (`–`) for parenthetical pauses, strip serial/Oxford commas in straightforward lists, and format quotes with British nesting.
 - **Default to neutral attribution:** Replace editorialising tags (`insisted`, `warned`, `admitted`) with neutral `said`.
+- **Apply progressive house terminology:** Use accurate environmental terms (`climate crisis`, `global heating`), gender-neutral occupational nouns (`actor`, `chair`), and respectful people-first language.
 - **Search unabridged references offline:** Check obscure proper nouns, diplomatic titles, and foreign placenames across all 26 letters without overflowing token limits.
 
 ## Skill structure
