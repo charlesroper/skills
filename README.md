@@ -10,6 +10,7 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 - `cbeams-git-commit-messages`: commit message guidance based on Chris Beams'
   seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
+- `guardian-style-guide`: Copy-edit and convert existing text to adhere strictly to The Guardian Style Guide while preserving the author's original voice, structure, and argument.
 
 ## Structure
 
@@ -23,6 +24,13 @@ skills/
     SKILL.md
     references/
       maintainable-css-manual.md
+  guardian-style-guide/
+    SKILL.md
+    references/
+      guardian-style-guide-a-f.md
+      guardian-style-guide-g-l.md
+      guardian-style-guide-m-r.md
+      guardian-style-guide-s-z.md
 ```
 
 Each skill is defined in its own `SKILL.md`.
