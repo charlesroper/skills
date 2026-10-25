@@ -1,0 +1,57 @@
+name: Sync Guardian Style Guide References
+
+on:
+  schedule:
+    # Run every Sunday at 20:00 UTC (Sunday evening)
+    - cron: '0 20 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-references:
+    name: Sync references
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Fetch Guardian references
+        working-directory: guardian-style-guide
+        run: |
+          uv run guardian_style_guide.py
+
+      - name: Create pull request if changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            Update Guardian style guide references
+
+            Automated sync of upstream updates from the Guardian and Observer
+            style guide.
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: update-guardian-style-guide-references
+          delete-branch: true
+          title: "Update Guardian style guide references"
+          body: |
+            ## Summary
+
+            Automated weekly sync detected differences between the upstream Guardian style guide and the reference files in `guardian-style-guide/references/`.
+
+            ## Changes
+
+            Reference batches were refreshed using `guardian_style_guide.py`.
+
+            ## Verification
+
+            Please inspect the diff to review additions, revisions, or removals from the upstream guide before merging.
