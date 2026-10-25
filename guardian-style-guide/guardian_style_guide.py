@@ -201,13 +201,25 @@ def build_document(letters: str, delay: float) -> str:
     return header + "\n\n" + "\n\n".join(section for _, section in letter_sections) + "\n"
 
 
-def write_document(dest: Path, content: str) -> None:
-    """Atomically write text content to a destination file."""
+def write_document(dest: Path, content: str, *, force: bool = False) -> bool:
+    """Atomically write text content to a destination file if changed.
+
+    Returns True if the file was written, False if substantive content was unchanged.
+    """
+    if dest.exists() and not force:
+        existing = dest.read_text(encoding="utf-8")
+        norm_existing = re.sub(r"^Retrieved: .*\n?", "", existing, flags=re.MULTILINE)
+        norm_new = re.sub(r"^Retrieved: .*\n?", "", content, flags=re.MULTILINE)
+        if norm_existing == norm_new:
+            print(f"unchanged {dest}", file=sys.stderr)
+            return False
+
     dest.parent.mkdir(parents=True, exist_ok=True)
     temporary = dest.with_name(dest.name + ".tmp")
     temporary.write_text(content, encoding="utf-8")
     temporary.replace(dest)
     print(f"wrote {dest} ({len(content):,} characters)", file=sys.stderr)
+    return True
 
 
 def selftest() -> None:
@@ -263,6 +275,11 @@ def parse_args() -> argparse.Namespace:
         help="seconds between requests (default: 0.4)",
     )
     parser.add_argument(
+        "--force",
+        action="store_true",
+        help="force writing files even if substantive content is unchanged",
+    )
+    parser.add_argument(
         "--selftest",
         action="store_true",
         help="run the offline parser test and exit",
@@ -289,7 +306,7 @@ def main() -> int:
         out_file = args.out or (args.out_dir / f"guardian-style-guide-{letters}.md")
         try:
             document = build_document(letters, delay)
-            write_document(out_file, document)
+            write_document(out_file, document, force=args.force)
         except Exception as error:
             print(f"error: {error}", file=sys.stderr)
             return 1
@@ -304,7 +321,7 @@ def main() -> int:
         out_file = args.out_dir / f"guardian-style-guide-{batch_name}.md"
         try:
             document = build_document(letters, delay)
-            write_document(out_file, document)
+            write_document(out_file, document, force=args.force)
         except Exception as error:
             print(f"error building batch {batch_name}: {error}", file=sys.stderr)
             return 1
