@@ -54,29 +54,28 @@ A scheduled GitHub Actions workflow checks for upstream changes every Sunday eve
 
 To refresh local reference files manually:
 
-1. Install [uv](https://docs.astral.sh/uv/) if you do not have it installed.
-2. Run the update script to download all four volumes:
+The update script uses only Python's standard library and requires no external dependencies. You can run it with `python3` (or `uv run`):
 
 ```bash
-uv run guardian_style_guide.py
+python3 guardian_style_guide.py
 ```
 
 The script rewrites files only when substantive entries have changed. To force rewrite files regardless of changes, pass `--force`:
 
 ```bash
-uv run guardian_style_guide.py --force
+python3 guardian_style_guide.py --force
 ```
 
 To test a single letter:
 
 ```bash
-uv run guardian_style_guide.py --letters z
+python3 guardian_style_guide.py --letters z
 ```
 
-3. Run the offline parser verification suite:
+To run the offline parser verification suite:
 
 ```bash
-uv run guardian_style_guide.py --selftest
+python3 guardian_style_guide.py --selftest
 ```
 
 ## License

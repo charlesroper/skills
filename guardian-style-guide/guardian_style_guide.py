@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = [
-#     "httpx>=0.27.0",
-# ]
+# dependencies = []
 # ///
 """Download the Guardian and Observer style guide into Markdown batch files.
 
@@ -11,23 +9,24 @@ By default, fetches all letters in four alphabetical batches (a-f, g-l, m-r, s-z
 and writes them directly into the 'references/' directory.
 
 Usage:
-    uv run guardian_style_guide.py                     # Downloads all 4 batches to references/
-    uv run guardian_style_guide.py --out full.md       # Downloads all letters into a single file
-    uv run guardian_style_guide.py --letters z         # Downloads only letter z
+    python3 guardian_style_guide.py                   # Downloads all 4 batches to references/
+    python3 guardian_style_guide.py --out full.md     # Downloads all letters into a single file
+    python3 guardian_style_guide.py --letters z       # Downloads only letter z
 """
 
 from __future__ import annotations
 
 import argparse
 import datetime as dt
+import gzip
 from html.parser import HTMLParser
 from pathlib import Path
 import re
 import sys
 import time
+from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin
-
-import httpx
+from urllib.request import Request, urlopen
 
 PAGE_URL = "https://www.theguardian.com/guardian-style-guide-{letter}"
 SERIES_URL = "https://www.theguardian.com/info/series/the-guardian-style-guide"
@@ -368,23 +367,37 @@ class PageParser(HTMLParser):
 
 
 def fetch(url: str, *, attempts: int = 3, timeout: float = 30.0) -> str:
-    """Download a webpage with retries."""
+    """Download a webpage with retries using only the standard library."""
+    request = Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept-Encoding": "gzip, deflate",
+        },
+    )
+    last_error: Exception | None = None
+
     for attempt in range(1, attempts + 1):
         try:
-            resp = httpx.get(
-                url,
-                headers={"User-Agent": USER_AGENT},
-                timeout=timeout,
-                follow_redirects=True,
-            )
-            resp.raise_for_status()
-            return resp.text
-        except Exception as err:
-            if attempt == attempts:
-                raise RuntimeError(f"could not fetch {url}: {err}") from err
+            with urlopen(request, timeout=timeout) as response:
+                charset = response.headers.get_content_charset() or "utf-8"
+                raw = response.read()
+                if response.headers.get("Content-Encoding") == "gzip":
+                    raw = gzip.decompress(raw)
+                return raw.decode(charset, errors="replace")
+        except HTTPError as error:
+            last_error = error
+            if error.code == 404:
+                raise
+            if error.code != 429 and error.code < 500:
+                raise
+        except (URLError, TimeoutError) as error:
+            last_error = error
+
+        if attempt < attempts:
             time.sleep(2 ** (attempt - 1))
 
-    raise RuntimeError(f"could not fetch {url}")
+    raise RuntimeError(f"could not fetch {url}: {last_error}")
 
 
 def as_blockquote(markdown: str) -> str:
