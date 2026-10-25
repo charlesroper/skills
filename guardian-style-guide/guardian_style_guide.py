@@ -32,7 +32,7 @@ PAGE_URL = "https://www.theguardian.com/guardian-style-guide-{letter}"
 SERIES_URL = "https://www.theguardian.com/info/series/the-guardian-style-guide"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
-DEFAULT_OUT_DIR = Path("references")
+DEFAULT_OUT_DIR = Path(__file__).resolve().parent / "references"
 DEFAULT_BATCHES: list[tuple[str, str]] = [
     ("a-f", "abcdef"),
     ("g-l", "ghijkl"),
@@ -372,7 +372,7 @@ def fetch(url: str, *, attempts: int = 3, timeout: float = 30.0) -> str:
         url,
         headers={
             "User-Agent": USER_AGENT,
-            "Accept-Encoding": "gzip, deflate",
+            "Accept-Encoding": "gzip",
         },
     )
     last_error: Exception | None = None
