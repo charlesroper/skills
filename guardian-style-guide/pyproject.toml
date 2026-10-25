@@ -5,7 +5,6 @@ description = "Download and maintain the Guardian and Observer style guide in Ma
 readme = "SKILL.md"
 requires-python = ">=3.10"
 dependencies = [
-    "beautifulsoup4>=4.12.0",
     "httpx>=0.27.0",
 ]
 

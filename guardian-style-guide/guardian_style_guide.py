@@ -2,7 +2,6 @@
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
-#     "beautifulsoup4>=4.12.0",
 #     "httpx>=0.27.0",
 # ]
 # ///
@@ -21,12 +20,13 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+from html.parser import HTMLParser
 from pathlib import Path
 import re
 import sys
 import time
+from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup, NavigableString, Tag
 import httpx
 
 PAGE_URL = "https://www.theguardian.com/guardian-style-guide-{letter}"
@@ -41,107 +41,330 @@ DEFAULT_BATCHES: list[tuple[str, str]] = [
     ("s-z", "stuvwxyz"),
 ]
 
-
-def el_to_md(el: Tag | NavigableString) -> str:
-    """Convert an HTML tag or text node to clean Markdown."""
-    if isinstance(el, NavigableString):
-        text = str(el).replace("\xa0", " ")
-        return re.sub(r"([\\`*_\[\]<>])", r"\\\1", text)
-
-    if not isinstance(el, Tag):
-        return ""
-
-    if el.name in ("strong", "b"):
-        inner = "".join(el_to_md(c) for c in el.children).strip()
-        return f"**{inner}**" if inner else ""
-
-    if el.name in ("em", "i"):
-        inner = "".join(el_to_md(c) for c in el.children).strip()
-        return f"*{inner}*" if inner else ""
-
-    if el.name == "a":
-        href = el.get("href", "")
-        inner = "".join(el_to_md(c) for c in el.children).strip()
-        if href and not href.startswith("#"):
-            return f"[{inner}]({href})"
-        return inner
-
-    if el.name == "br":
-        return "\n"
-
-    if el.name in ("sub", "sup", "span"):
-        return "".join(el_to_md(c) for c in el.children)
-
-    return "".join(el_to_md(c) for c in el.children)
+VOID_TAGS = {
+    "area", "base", "br", "col", "embed", "hr", "img", "input",
+    "link", "meta", "param", "source", "track", "wbr",
+}
+SKIP_TAGS = {
+    "aside", "audio", "button", "figure", "form", "iframe", "noscript",
+    "script", "style", "svg", "video",
+}
+BLOCK_TAGS = {"p", "h2", "h3", "h4", "h5", "h6", "li", "blockquote"}
+HEADING_TAGS = {"h2", "h3", "h4", "h5", "h6"}
 
 
-def format_p(p: Tag) -> list[str]:
-    """Format a <p> element into one or more Markdown entries."""
-    # Move any <br> accidentally nested inside <strong>/<em> out after the tag
-    for br in p.find_all("br"):
-        if br.parent.name in ("strong", "b", "em", "i"):
-            br.parent.insert_after(br)
-
-    md = el_to_md(p)
-    md = re.sub(r"\*\*[ \t]*\*\*", " ", md)
-
-    lines = [line.strip() for line in md.split("\n") if line.strip()]
-    if not lines:
-        return []
-
-    # Group lines by bold headwords
-    entries: list[list[str]] = []
-    current: list[str] = [lines[0]]
-    for line in lines[1:]:
-        if line.startswith("**") and not line.startswith("** "):
-            entries.append(current)
-            current = [line]
-        else:
-            current.append(line)
-    entries.append(current)
-
-    result: list[str] = []
-    for entry in entries:
-        fixed_lines: list[str] = []
-        for line in entry:
-            if re.match(r"^(?:#{1,6}\s|[-+]\s|\d+[.)]\s|>)", line):
-                line = "\\" + line
-            fixed_lines.append(line)
-
-        if len(fixed_lines) == 2 and fixed_lines[0].startswith("**"):
-            result.append(f"{fixed_lines[0]} — {fixed_lines[1]}")
-        else:
-            result.append("\\\n".join(fixed_lines))
-
-    return result
+def escape_markdown(text: str) -> str:
+    """Escape characters that would otherwise be read as Markdown markup."""
+    return re.sub(r"([\\`*_\[\]<>])", r"\\\1", text)
 
 
-def parse_page(html: str) -> tuple[str, str]:
-    """Extract (standfirst_quote, article_markdown) from a Guardian page."""
-    soup = BeautifulSoup(html, "html.parser")
+def escape_block_starts(text: str) -> str:
+    """Stop ordinary lines being read as headings, lists, or quotes."""
+    lines = []
+    for line in text.split("\n"):
+        if re.match(r"^(?:#{1,6}\s|[-+]\s|\d+[.)]\s|>)", line):
+            line = "\\" + line
+        lines.append(line)
+    return "\n".join(lines)
 
-    # Extract opening standfirst quote if present
-    standfirst = ""
-    standfirst_el = soup.select_one('[data-gu-name="standfirst"]')
-    if standfirst_el:
-        quote = el_to_md(standfirst_el).strip()
-        if quote:
-            standfirst = "\n".join(f"> {line}" if line else ">" for line in quote.splitlines())
 
-    # Extract article body
-    body_el = soup.select_one(".article-body-commercial-selector")
-    if not body_el:
-        return standfirst, ""
+def clean_text(text: str) -> str:
+    text = text.replace("\xa0", " ")
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r"\n{2,}", "\n\n", text)
+    return text.strip()
 
-    blocks: list[str] = []
-    for p in body_el.find_all("p"):
-        # Skip A-Z navigation bars (paragraphs with 15+ links to other guide letters)
-        nav_links = p.find_all("a", href=re.compile(r"/guardian-(?:observer-)?style-guide-[a-z]"))
-        if len(nav_links) >= 15:
+
+def format_definition_block(text: str) -> str:
+    """Keep <br>-separated lines as Markdown hard breaks.
+
+    A line beginning with a bold headword starts a new entry. Other lines stay
+    in the same paragraph, separated by a backslash hard break.
+    """
+    paragraphs: list[str] = []
+
+    for paragraph in text.split("\n\n"):
+        lines = [line.strip() for line in paragraph.split("\n") if line.strip()]
+        if not lines:
             continue
-        blocks.extend(format_p(p))
 
-    return standfirst, "\n\n".join(blocks)
+        entries: list[list[str]] = []
+        current = [lines[0]]
+        for line in lines[1:]:
+            if line.startswith("**") and not line.startswith("** "):
+                entries.append(current)
+                current = [line]
+            else:
+                current.append(line)
+        entries.append(current)
+
+        for entry in entries:
+            if len(entry) == 2 and entry[0].startswith("**"):
+                paragraphs.append(entry[0] + " — " + entry[1])
+            else:
+                paragraphs.append("\\\n".join(entry))
+
+    return "\n\n".join(paragraphs)
+
+
+def markdown_url(url: str) -> str:
+    if any(char in url for char in " ()<>"):
+        return "<" + url.replace(" ", "%20") + ">"
+    return url.replace(")", "%29")
+
+
+class MarkdownBuilder:
+    """Turn an HTML fragment into a list of Markdown blocks."""
+
+    def __init__(self, base_url: str) -> None:
+        self.base_url = base_url
+        self.blocks: list[str] = []
+        self.current: list[str] = []
+        self.block: str | None = None
+        self.skip_depth = 0
+        self.markers: list[dict] = []
+        self.links: list[str | None] = []
+        self.link_count = 0
+        self.style_guide_link_count = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+
+        if self.skip_depth:
+            if tag not in VOID_TAGS:
+                self.skip_depth += 1
+            return
+
+        if tag in SKIP_TAGS or attributes.get("id") == "sign-in-gate":
+            self.skip_depth = 1
+            return
+
+        if tag in BLOCK_TAGS:
+            self.flush()
+            self.block = tag
+        elif tag == "br":
+            self.break_line()
+        elif tag in ("strong", "b"):
+            self.open_marker("**", tag)
+        elif tag in ("em", "i"):
+            self.open_marker("*", tag)
+        elif tag == "a":
+            href = attributes.get("href")
+            if href and not href.startswith("#"):
+                self.links.append(href)
+                self.link_count += 1
+                if "guardian-style-guide-" in href or "guardian-observer-style-guide-" in href:
+                    self.style_guide_link_count += 1
+                self.current.append("[")
+            else:
+                self.links.append(None)
+        elif tag == "hr":
+            self.flush()
+            self.blocks.append("---")
+        elif tag == "img":
+            return
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if self.skip_depth:
+            return
+        if tag == "br":
+            self.break_line()
+        elif tag not in ("img", "source", "input", "meta", "link"):
+            self.handle_starttag(tag, attrs)
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.skip_depth:
+            if tag not in VOID_TAGS:
+                self.skip_depth -= 1
+            return
+
+        if tag in BLOCK_TAGS and self.block == tag:
+            self.flush()
+        elif tag in ("strong", "b", "em", "i"):
+            self.close_tag_marker(tag)
+        elif tag == "a":
+            href = self.links.pop() if self.links else None
+            if href:
+                self.current.append("](" + markdown_url(urljoin(self.base_url, href)) + ")")
+
+    def handle_data(self, data: str) -> None:
+        if self.skip_depth:
+            return
+        text = re.sub(r"\s+", " ", data)
+
+        if text.startswith(" ") and self.markers:
+            marker = self.markers[-1]
+            if (
+                not marker["has_text"]
+                and not marker["closed"]
+                and marker["index"] == len(self.current) - 1
+            ):
+                # Move a space that sits inside <strong> to before the marker.
+                self.current.insert(marker["index"], " ")
+                marker["index"] += 1
+                text = text.lstrip()
+
+        if text.strip():
+            for marker in self.markers:
+                marker["has_text"] = True
+        if text:
+            self.current.append(escape_markdown(text))
+
+    def open_marker(self, marker: str, tag: str) -> None:
+        self.current.append(marker)
+        self.markers.append({
+            "marker": marker,
+            "tag": tag,
+            "index": len(self.current) - 1,
+            "has_text": False,
+            "closed": False,
+        })
+
+    def close_marker(self, marker: str) -> None:
+        """Close bold/italic without swallowing the space before the marker."""
+        suffix = ""
+        if self.current and self.current[-1].endswith(" "):
+            self.current[-1] = self.current[-1].rstrip(" ")
+            suffix = " "
+        self.current.append(marker + suffix)
+
+    def close_tag_marker(self, tag: str) -> None:
+        for position in range(len(self.markers) - 1, -1, -1):
+            marker = self.markers[position]
+            if marker["tag"] != tag:
+                continue
+            self.markers.pop(position)
+            if marker["closed"]:
+                return
+            if marker["has_text"]:
+                self.close_marker(marker["marker"])
+            else:
+                # Remove an empty <strong>/<em> rather than emitting "****".
+                self.current[marker["index"]] = ""
+            return
+
+    def break_line(self) -> None:
+        for marker in self.markers:
+            if marker["closed"]:
+                continue
+            if marker["has_text"]:
+                self.close_marker(marker["marker"])
+            else:
+                self.current[marker["index"]] = ""
+            marker["closed"] = True
+        self.current.append("\n")
+
+    def flush(self) -> None:
+        text = clean_text("".join(self.current))
+        self.current = []
+        self.markers.clear()
+        self.links.clear()
+
+        if not text:
+            self.block = None
+            self.link_count = 0
+            self.style_guide_link_count = 0
+            return
+
+        # Skip the A-Z navigation paragraph at the top of each page.
+        if self.link_count >= 15 and self.style_guide_link_count >= 15:
+            self.block = None
+            self.link_count = 0
+            self.style_guide_link_count = 0
+            return
+
+        # Source markup sometimes contains an empty <strong> used only for spacing.
+        text = re.sub(r"\*\*[ \t]*\*\*", " ", text)
+        text = escape_block_starts(text)
+
+        if self.block in HEADING_TAGS:
+            level = int(self.block[1])
+            text = f"{'#' * level} {text}"
+        elif self.block == "li":
+            text = f"- {text}"
+        elif self.block == "blockquote":
+            text = "\n".join(f"> {line}" if line else ">" for line in text.split("\n"))
+        elif self.block == "p":
+            text = format_definition_block(text)
+
+        self.blocks.append(text)
+        self.block = None
+        self.link_count = 0
+        self.style_guide_link_count = 0
+
+    def markdown(self) -> str:
+        self.flush()
+        return "\n\n".join(self.blocks)
+
+
+class PageParser(HTMLParser):
+    """Extract the standfirst and article body from a Guardian page."""
+
+    def __init__(self, url: str) -> None:
+        super().__init__(convert_charrefs=True)
+        self.article = MarkdownBuilder(url)
+        self.standfirst = MarkdownBuilder(url)
+        self.article_depth = 0
+        self.standfirst_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self._start(tag, attrs, self_closing=False)
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self._start(tag, attrs, self_closing=True)
+
+    def _start(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+        self_closing: bool,
+    ) -> None:
+        attributes = dict(attrs)
+
+        if self.article_depth:
+            if self_closing:
+                self.article.handle_startendtag(tag, attrs)
+            else:
+                self.article.handle_starttag(tag, attrs)
+                if tag not in VOID_TAGS:
+                    self.article_depth += 1
+            return
+
+        if self.standfirst_depth:
+            if self_closing:
+                self.standfirst.handle_startendtag(tag, attrs)
+            else:
+                self.standfirst.handle_starttag(tag, attrs)
+                if tag not in VOID_TAGS:
+                    self.standfirst_depth += 1
+            return
+
+        class_name = attributes.get("class") or ""
+        if "article-body-commercial-selector" in class_name:
+            self.article_depth = 1
+            return
+        if attributes.get("data-gu-name") == "standfirst":
+            self.standfirst_depth = 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.article_depth:
+            self.article.handle_endtag(tag)
+            if tag not in VOID_TAGS:
+                self.article_depth -= 1
+            return
+
+        if self.standfirst_depth:
+            self.standfirst.handle_endtag(tag)
+            if tag not in VOID_TAGS:
+                self.standfirst_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self.article_depth:
+            self.article.handle_data(data)
+        elif self.standfirst_depth:
+            self.standfirst.handle_data(data)
 
 
 def fetch(url: str, *, attempts: int = 3, timeout: float = 30.0) -> str:
@@ -164,6 +387,19 @@ def fetch(url: str, *, attempts: int = 3, timeout: float = 30.0) -> str:
     raise RuntimeError(f"could not fetch {url}")
 
 
+def as_blockquote(markdown: str) -> str:
+    return "\n".join("> " + line if line else ">" for line in markdown.splitlines())
+
+
+def parse_page(html: str, url: str) -> tuple[str, str]:
+    parser = PageParser(url)
+    parser.feed(html)
+    standfirst_raw = parser.standfirst.markdown()
+    standfirst = as_blockquote(standfirst_raw) if standfirst_raw else ""
+    body = parser.article.markdown()
+    return standfirst, body
+
+
 def build_document(letters: str, delay: float) -> str:
     """Build a complete Markdown document for the specified letters."""
     letter_sections: list[tuple[str, str]] = []
@@ -173,7 +409,7 @@ def build_document(letters: str, delay: float) -> str:
         url = PAGE_URL.format(letter=letter)
         print(f"[{index:2d}/{total}] {letter.upper()} {url}", file=sys.stderr)
         html = fetch(url)
-        standfirst, body = parse_page(html)
+        standfirst, body = parse_page(html, url)
         if not body:
             raise RuntimeError(f"no article body found for {url}")
 
@@ -223,7 +459,7 @@ def write_document(dest: Path, content: str, *, force: bool = False) -> bool:
 
 
 def selftest() -> None:
-    """Run offline verification of the HTML-to-Markdown parser."""
+    """Run offline verification of HTML-to-Markdown parsing and whitespace preservation."""
     nav = " ".join(
         f'<a href="/guardian-style-guide-{letter}">{letter.upper()}</a>'
         for letter in "abcdefghijklmnopqrstuvwxyz"
@@ -235,14 +471,22 @@ def selftest() -> None:
       <p><strong>A*</strong><br/>(A-level and GCSE) not A-star</p>
       <p><strong>term</strong><br>first line<br>second line</p>
       <p><strong>note</strong><br><em>italic</em></p>
+      <p>In reference to US legislation, <strong>six-week abortion ban </strong>is preferable</p>
+      <p><strong>Academy Awards</strong><br/>or<strong> Oscars</strong><br/>individual awards</p>
+      <p>Use <strong>pro-choice</strong>,<strong> </strong>not pro-abortion;</p>
+      <p>people born<strong> </strong>in the period</p>
     </div>
     """
-    standfirst, body = parse_page(page)
+    standfirst, body = parse_page(page, "https://example.com/test")
 
     assert "guardian-style-guide-a" not in body
     assert "**A\\*** — (A-level and GCSE) not A-star" in body
     assert "**term**\\\nfirst line\\\nsecond line" in body
     assert "**note** — *italic*" in body
+    assert "**six-week abortion ban** is preferable" in body
+    assert "or **Oscars**" in body
+    assert "**pro-choice**, not pro-abortion;" in body
+    assert "people born in the period" in body
     assert standfirst == "> ‘Quote.’ **Author**"
     print("selftest passed")
 
