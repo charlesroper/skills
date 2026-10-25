@@ -94,7 +94,7 @@ normally preferable to added, commented, declared, pointed out, ejaculated, etc;
 
 **sambuca**
 
-**same-sex marriage** — or **equal marriage rights** rather than “gay marriage”
+**same-sex marriage** — or **equal marriage rights**rather than “gay marriage”
 
 **Sami** — Indigenous group inhabiting northern parts of Norway, Sweden, Finland and Russia’s Murmansk oblast. Do not refer to them as Lapps. Their homeland is called Sápmi (see entry on Lappland)
 
@@ -144,7 +144,7 @@ The Department for Work and Pensions, confusingly, says it “sanctions” peopl
 
 **saute, sauteing, sauteed**
 
-**savannah** (UK); **savanna** (US)
+**savannah** (UK);**savanna** (US)
 
 **Savile, Jimmy**
 
@@ -178,7 +178,7 @@ The Department for Work and Pensions, confusingly, says it “sanctions” peopl
 
 **scientific measurements** — Take care: m in scientific terms stands for milli (1mW is 1,000th of a watt), while M denotes mega (1MW is a million watts); in such circumstances it is wise not to bung in another m when you mean million, so write out, for example, 10 million C.
 
-amps **A**, volts **V**, watts **W**, kilowatts **kW**, megawatts **MW**, gigawatts **GW,** milliwatts **mW**, joules **J**, kilojoules **kJ**
+amps **A**, volts **V**, watts **W**, kilowatts **kW**, megawatts **MW**, gigawatts**GW,**milliwatts **mW**, joules **J**, kilojoules **kJ**
 
 **scientific names** — in italics, with the first name (denoting the genus) capped, the second (denoting the species) lc: *Escherichia coli*, *Canis lupus*, *Quercus robur*. The name can be shortened by using the first initial: *E coli*, *C lupus*, *Q robur* (but we do not use a full point after the initial)
 
@@ -186,7 +186,7 @@ amps **A**, volts **V**, watts **W**, kilowatts **kW**, megawatts **MW**, gigawa
 
 **sci-fi**
 
-**Scilly** — an alternative is **Isles of Scilly** but not Scilly Isles
+**Scilly** — an alternative is **Isles of Scilly**but not Scilly Isles
 
 **scoby, scobys** — stands for “symbiotic culture of bacteria and yeast”. Used to make the fermented drink kombucha
 
@@ -244,12 +244,12 @@ WP Crozier recalled of Scott: “Once, when an article in type was shown to him 
 
 **sea change or step change?** — used interchangeably, typically to mean nothing more than “a big change”, but there is a difference that you might think worth preserving. Shakespeare coined the former in a well-known passage of The Tempest:
 
-*Full fathom five thy father lies;*\
+*Full fathom five thy father lies;\
 Of his bones are coral made;\
 Those are pearls that were his eyes;\
 Nothing of him that doth fade,\
 But doth suffer a sea change,\
-Into something rich and strange.
+Into something rich and strange.*
 
 The idea is that a major transformation is taking place, but very slowly. By contrast, step change comes from physics, where it means an abrupt change in a value, as in voltage
 
@@ -491,7 +491,7 @@ Freddie’s and Beth’s parties (they have one each)
 
 **Siena** — Tuscan city; **sienna** pigment; **Sienna Miller**
 
-**signoff** — noun; **sign off** verb
+**signoff** — noun; **sign off**verb
 
 **Sikh names** — Singh means a lion and Kaur a princess. Guru Gobind Singh Ji gave Singh as a last name to all Sikh men and Kaur to all Sikh women to eliminate discrimination based on family name, which denoted which caste someone belonged to.
 
@@ -505,7 +505,7 @@ Over time, many Sikh families have reverted to using their family name, but have
 
 **sim card** — (it stands for subscriber identity module)
 
-**since** — [See as or since](<https://www.theguardian.com/guardian-observer-style-guide-a#as%20or%20since>)
+**since** — [See as or since](https://www.theguardian.com/guardian-observer-style-guide-a#as or since)
 
 **Singaporean names** — in three parts, eg Lee Kuan Yew
 
@@ -553,7 +553,7 @@ Sports teams and rock bands are the exception – “England have an uphill task
 
 **Sky** — no longer BSkyB
 
-**Sky+** — Sky’s personal video recorder service
+**Sky+** — Sky’s personal video recorderservice
 
 **Sky One** — no longer Sky 1
 
@@ -649,7 +649,7 @@ Since the 2001 census, the main UK social classification has been the National S
 
 **solar system** — [See planets](https://www.theguardian.com/guardian-observer-style-guide-p#planets)
 
-**sold down the river** — this phrase is thought to have originated in reference to the trafficking of enslaved people within the US in the 19th century, so don’t use it casually or frivolously in other contexts
+**sold down the river** — thisphrase is thought to have originated in reference to the trafficking of enslaved people within the US in the 19th century, so don’t use it casually or frivolously in other contexts
 
 **soldiers** — It is good to remember that not everyone in a military uniform belongs to the army. Those who do not should not be referred to as soldiers. If you are unsure, military personnel or members of the armed forces are handy alternatives
 
@@ -801,7 +801,7 @@ Use square brackets sparingly and only when they will help, rather than insult \
 
 **SSSI** — site of special scientific interest
 
-**stadium** — plural **stadiums**, not stadia; also, initial caps when it is in the name of the venue eg London Stadium, Etihad Stadium, but leave out whenever possible eg at Wembley, at Old Trafford.
+**stadium** — plural **stadiums**, not stadia; also,initial caps when it is in the name of the venue eg London Stadium, Etihad Stadium, but leave out whenever possible eg at Wembley, at Old Trafford.
 
 **staff** — are plural
 
@@ -819,7 +819,7 @@ The word “stampede” suggests a panicking mass of people who are collectively
 
 We should follow the experts and use the term “crowd crush” or similar
 
-**standard of proof** — The standard of proof is either criminal (beyond reasonable doubt) or civil (on a balance of probabilities). The **burden of proof** refers to who has to prove an allegation in court ie in criminal cases the burden of proof is on the prosecution, in libel cases it is the defendant (ie the libeller rather than the libelled).
+**standard of proof** — The standard of proofis either criminal (beyond reasonable doubt) or civil (on a balance of probabilities). The **burden of proof** refers to who has to prove an allegation in court ie in criminal cases the burden of proof is on the prosecution, in libel cases it is the defendant (ie the libeller rather than the libelled).
 
 **standoff**
 
@@ -862,7 +862,7 @@ adjective: steadfast, eg a staunch defender of human rights
 
 **steelband** — not steel band, for a musical group
 
-**steelpan** — for the musical instrument; **steel pan** for the cooking implement
+**steelpan** — for the musical instrument; **steel pan**for the cooking implement
 
 **steelworker, steelworks**
 
@@ -936,15 +936,13 @@ Steven Gerrard (footballer), Steven Moffat (Doctor Who writer and producer), Ste
 
 **strikes** — we aim to accurately describe strike action in industrial disputes without taking sides. Saying employees are **on strike, striking** or taking **strike action** is the most straightforward way. Of the other options, some are more helpful than others.
 
-**Stoppage, stopped work** or **stayed off work** are fine.
-
-Industrial action is a bit vague, and does not necessarily include strikes.
-
-Walkout (as a noun) has negative (in the sense of anti-union) connotations. It does evoke sudden or wildcat strikes. Use with care.
+**Stoppage, stopped work** or**stayed off work**are fine.**Industrial action**\
+is a bit vague, and does not necessarily include strikes.**Walkout**\
+(as a noun) has negative (in the sense of anti-union) connotations. It does evoke sudden or wildcat strikes. Use with care.
 
 **Walked out** as an alternative to stopped work is not quite the same as walkout, and is fine if that actually happened, but context is all: “Thousands of tube workers walked out at 6pm to start a 24-hour strike” is OK. The point is that we are describing what happened without taking sides.
 
-**Downed tools** is too old-fashioned. “Journalists at the Guardian downed tools yesterday” just sounds silly. Avoid, unless actual hammers, screwdrivers etc are involved
+**Downed tools**is too old-fashioned. “Journalists at the Guardian downed tools yesterday” just sounds silly. Avoid, unless actual hammers, screwdrivers etc are involved
 
 **strippergram**
 
@@ -1676,7 +1674,7 @@ When quoting tweets, where the aim is normally to capture the flavour and convey
 
 **Ukraine place names**
 
-**Kyiv** not Kiev; **Donbas** not Donbass; **Odesa** not Odessa; **Luhansk** not Lugansk; **Lviv** not Lvov; **Kharkiv** not Kharkov; **Dnipro** (for the city and the river); **Hostomel** not Gostomel; **Mykolaiv**; **Zaporizhzhia; Berdiansk** not Berdyansk; **Borodianka** not Borodyanka; **Trostianets** not Trostyanets; **Chornobyl** not Chernobyl; **Savur-Mohyla** not Savur Mogila; **Izium** not Izyum; **Enerhodar** not Energodar; **Balakliia** not Balakliya; **Mariinka**
+**Kyiv** not Kiev; **Donbas** not Donbass; **Odesa** not Odessa; **Luhansk** not Lugansk; **Lviv** not Lvov; **Kharkiv** not Kharkov; **Dnipro** (for the city and the river); **Hostomel** not Gostomel; **Mykolaiv**;**Zaporizhzhia; Berdiansk** not Berdyansk; **Borodianka** not Borodyanka; **Trostianets** not Trostyanets; **Chornobyl** not Chernobyl; **Savur-Mohyla** not Savur Mogila; **Izium**not Izyum; **Enerhodar** not Energodar; **Balakliia** not Balakliya; **Mariinka**
 
 **ukulele** — not ukelele
 
@@ -1957,7 +1955,7 @@ A priest writes: “A vicar is a person who is the incumbent of a parish, and th
 
 **Volgograd** — Russian city known as Tsaritsyn until 1925 and Stalingrad from 1925 to 1961
 
-**von der Leyen, Ursula** — the president of the European Commission. Do not cap up the v or d when just her surname is used, unless it starts the sentence. So, for example: “The Brexit talks brought von der Leyen to despair.”
+**von der Leyen, Ursula** — the president of the European Commission.Do notcap up the v or d when just her surname is used, unless it starts the sentence. So, for example: “The Brexit talks brought von der Leyen to despair.”
 
 **voodoo** — use for fictional sorcery or metaphorical trickery, eg, statistical voodoo on the figures
 
@@ -2335,9 +2333,8 @@ It has become tedious every time the World Series comes round to see its name ci
 
 **World Trade Center, Ground Zero** — but the twin towers
 
-**World Trade Organization**
-
-world war three\
+**World Trade Organization\
+world war three**\
 not world war 3 or world war III
 
 **worldview**
@@ -2438,7 +2435,7 @@ Remember that we have millions of readers in different time zones around the wor
 
 **yoghurt**
 
-**Yoon Suk Yeol** — the former president of South Korea
+**Yoon Suk Yeol** — theformer president of South Korea
 
 **yo-yo**
 

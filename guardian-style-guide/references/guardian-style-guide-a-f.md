@@ -50,9 +50,9 @@ Cap up single letters in such expressions as C-list, F-word, “the word assassi
 
 **Aboriginal Australians** — should be identified by their country or language groups at first mention if known, eg a Wiradjuri-Yorta Yorta man, a Noongar-Badimaya woman – or take your cue from how they identify themselves. The term “Aborigine” is outdated and offensive; Aboriginal should only be used as an adjective. Indigenous Australians is an umbrella term that covers both Aboriginal people from the Australian mainland and Torres Strait Islanders
 
-**abortion** — Use **pro-choice**, not pro-abortion; and use **anti-abortion**, not pro-life. **Anti-choice** can be used when talking about opposition to all reproductive rights, including abortion, birth control, family planning etc.
+**abortion** — Use **pro-choice**,not pro-abortion; and use **anti-abortion**, not pro-life. **Anti-choice** can be used when talking about opposition to all reproductive rights, including abortion, birth control, family planning etc.
 
-In reference to US legislation, **six-week abortion ban** is preferable to foetal heartbeat bill, unless quoting someone talking about the “heartbeat bill”
+In reference to US legislation, **six-week abortion ban**is preferable to foetal heartbeat bill, unless quoting someone talking about the “heartbeat bill”
 
 **Ábrego García, Kilmar**
 
@@ -69,7 +69,7 @@ In reference to US legislation, **six-week abortion ban** is preferable to foeta
 **abyss**
 
 **Academy Awards**\
-or **Oscars**\
+or**Oscars**\
 individual awards are lowercase, eg best actor award, Oscar for best picture
 
 After first mention, abbreviate the Academy of Motion Picture Arts and Sciences to **the Academy**
@@ -390,7 +390,7 @@ Note, however, the difference between “she got the answers all right” and �
 
 Westworld extras allegedly asked to participate in ‘graphic sexual situations’
 
-Did they allegedly ask, or were they allegedly asked? A simple “were” before “asked” would have fixed this. Similarly:
+Did they allegedly ask, or were they allegedly asked? A simple “were” before “asked” would have fixed this.Similarly:
 
 Labour warned of financial crash (did someone warn Labour of an impending crash, or did Labour warn someone else?)
 
@@ -611,9 +611,7 @@ A stereotype is based on simplistic generalisations about a particular group. So
 
 **arguably** — unarguably one of the most overused words in the language
 
-**argyle sweater**
-
-Armageddon
+**argyle sweater — Armageddon**
 
 **armed forces, armed services** — the army, the British army, the navy, but Royal Navy, Royal Air Force or RAF
 
@@ -673,8 +671,8 @@ A common error that is quite easy to spot if you try to read it without the phra
 
 **Asio** — Australian Security and Intelligence Service, the country’s domestic counter-intelligence and security agency (the equivalent of Britain’s MI5)
 
-**Asperger syndrome** — but it is acceptable to call it Asperger’s for short. Some people dislike the name because of the association with Hans Asperger, or consider it outdated, so it is better to use the broader term “autistic” unless you know a person prefers to say they have Asperger’s, in which case you should respect that preference.
-
+**Asperger syndrome**\
+but it is acceptable to call it Asperger’s for short. Some people dislike the name because of the association with Hans Asperger, or consider it outdated, so it is better to use the broader term “autistic” unless you know a person prefers to say they have Asperger’s, in which case you should respect that preference.\
 Do not use such witticisms as “Asperger-ish men”, which had to be removed from our website
 
 **aspirin**
@@ -805,7 +803,7 @@ See byte
 
 **baby Bells** — US regional telephone companies formed after the breakup of AT&T in 1984
 
-**baby boomer** — people born in the period between the end of the second world war and the mid-1960s when there were increases in the number of births, particularly in the western world. The generation that preceded them, between about 1928 and 1945 are sometimes called the **silent generation**
+**baby boomer** — people bornin the period between the end of the second world war and the mid-1960s when there were increases in the number of births, particularly in the western world. The generation that preceded them, between about 1928 and 1945 are sometimes called the **silent generation**
 
 **Babygro** — TM; a generic alternative is **babygrow**
 
@@ -825,7 +823,7 @@ See byte
 
 **back catalogue, back yard**
 
-**backdoor** (one word) — a digital encryption term for a way of bypassing normal authentication in a product
+**backdoor**(one word) — a digital encryption term for a way of bypassing normal authentication in a product
 
 **back door** (two words) — the rear entrance to a house
 
@@ -851,7 +849,7 @@ See byte
 
 **bailout** — noun
 
-**bail out** — a prisoner, a company or person in financial difficulty; but **bale out** a boat or from an aircraft
+**bail out** — a prisoner, a company or person in financial difficulty; but **bale out**a boat or from an aircraft
 
 **baked alaska**
 
@@ -1161,7 +1159,7 @@ The same applies to bimonthly and biweekly: say “every fortnight”, “twice 
 
 **bite-size** — prefer to bite-sized
 
-**bitterest** — use of this word by the Guardian in 2006 provoked [a bitter controversy ](https://www.theguardian.com/commentisfree/2006/nov/13/comment.media)among readers, many of whom (rightly) pointed out that there is nothing wrong with it
+**bitterest** — use of this word by the Guardian in 2006 provoked [a bitter controversy](https://www.theguardian.com/commentisfree/2006/nov/13/comment.media)among readers, many of whom (rightly) pointed out that there is nothing wrong with it
 
 **black** — should be used only as an adjective when referring to race, ie not “blacks” but “black people” or whatever noun is appropriate. There is debate about the capitalisation of black, with some using it as a physical descriptor, others to describe a specific cultural group, therefore while generally lower case, if a subject, writer or editor of a story prefers to use Black then that choice should be respected. (See also **BAME**.)
 
@@ -1371,7 +1369,7 @@ Use brackets sparingly, particularly square ones: it’s not necessary to add \[
 
 **breastfed, breastfeeding**
 
-**Brecon Beacons** — now Bannau Brycheiniog
+**Brecon Beacons** — nowBannau Brycheiniog
 
 **Bremner, Ewen** — actor, not Ewan
 
@@ -1507,7 +1505,7 @@ And this is the third.
 
 **Burberry** — TM
 
-**burden of proof** — This refers to who has to prove an allegation in court ie in criminal cases the burden of proof is on the prosecution, in libel cases it is the defendant (ie the libeller rather than the libelled). The **standard of proof** is criminal (beyond reasonable doubt) or civil (on a balance of probabilities).
+**burden of proof** — This refers to who has to prove an allegation in court ie in criminal cases the burden of proof is on the prosecution, in libel cases it is the defendant (ie the libeller rather than the libelled). The **standard of proof**is criminal (beyond reasonable doubt) or civil (on a balance of probabilities).
 
 **bureau** — plural **bureaus** (furniture) or **bureaux** (organisations)
 
@@ -1547,7 +1545,7 @@ And this is the third.
 
 **butterflies and moths** — are usually lc: adonis blue, orange-tip, purple emperor, silver-washed fritillary, death’s-head hawk moth, etc; but note the following: Duke of Burgundy, Queen of Spain fritillary, Essex skipper, Lulworth skipper, Scotch argus
 
-**buyout** — but **buy-in**
+**buyout** — but**buy-in**
 
 **buy to let, help to buy, right to buy** — no initial caps; hyphenate before a noun, eg buy-to-let mortgages, help-to-buy programme, right-to-buy scheme
 
@@ -1571,7 +1569,7 @@ And this is the third.
 
 **cabinet, shadow cabinet** — but **Cabinet Office**
 
-**cack-handed** — remember this has also been used as an offensive term for left-handed. You could just say “clumsy”
+**cack-handed** — remember thishas also been used as an offensive term for left-handed. You could just say “clumsy”
 
 **caddie** — tee; **caddy** tea
 
@@ -1675,11 +1673,11 @@ Our style reflects these developments. We aim for coherence and consistency, but
 
 **geological epochs and archaeological periods** initial caps, eg Anthropocene, Mesolithic, Palaeolithic.
 
-**parliamentary committees, reports and inquiries** all lc, eg trade and industry select committee, royal commission on long-term care for the elderly, Jenkins report.
+**parliamentary committees, reports and inquiries**all lc, eg trade and industry select committee, royal commission on long-term care for the elderly, Jenkins report.
 
 **proposed party policies** lc, but in quote marks at first mention if they could cause confusion, eg national education service, “green new deal” etc
 
-**stadiums** initial caps when it is in the name of the venue eg London Stadium, Etihad Stadium, but leave out whenever possible eg at Wembley, at Old Trafford.
+**stadiums**initial caps when it is in the name of the venue eg London Stadium, Etihad Stadium, but leave out whenever possible eg at Wembley, at Old Trafford.
 
 **universities and colleges of further and higher education** caps for institution, lc for departments, eg Durham University department of ancient, medieval and modern history, Oregon State University, Free University of Berlin, University of Queensland school of journalism, London College of Communication.
 
@@ -1707,7 +1705,9 @@ There is no need to put (left) after one of the names in a caption showing, say,
 
 **cardiac arrest** — when the heart stops beating unexpectedly, as opposed to a heart attack, when blood flow to the heart is blocked
 
-**cards** — scratchcard, smartcard, swipecard but **credit card, debit card, sim card**
+**cards\
+scratchcard, smartcard, swipecard**\
+but **credit card, debit card, sim card**
 
 **careen** — to sway or keel over to one side; often confused with **career**, to rush along
 
@@ -1741,17 +1741,17 @@ There is no need to put (left) after one of the names in a caption showing, say,
 
 **casting director** — sometimes mistakenly referred to as a “casting agent”
 
-**castoff** — one word (noun, adjective); **cast off** two words (verb)
+**castoff** — one word (noun, adjective); **cast off**two words (verb)
 
 **Castro, Raúl**
 
-**casual (workers)** freelance is often preferable
+**casual (workers)**freelance is often preferable
 
 **casualties** — includes dead and injured, so not a synonym for deaths; **casualty** lc, as in she’s been taken to casualty (though normally called A&E)
 
 **Cat scan** — or **CT scan**; it stands for computerised (axial) tomography
 
-**Catalonia** — adjective **Catalan** - not Catalonian
+**Catalonia** — adjective **Catalan**-not Catalonian
 
 **catch-22** — lc unless specifically referring to Joseph Heller’s 1961 novel **Catch-22**, which explained the dilemma thus: “Orr would be crazy to fly more missions and sane if he didn’t, but if he were sane he had to fly them. If he flew them he was crazy and didn’t have to; but if he didn’t want to he was sane and had to”
 
@@ -1941,7 +1941,7 @@ People live in (not on) Jersey, Guernsey and the Isle of Man.
 
 **child sexual abuse** — rather than “child sex”; so for example we would refer to a “child sexual abuse ring” rather than a “child sex ring”, but say “child sex offender” rather than “child sexual offender”.
 
-Say **child sexual abuse images** or **child abuse images** rather than “child pornography”, “child porn” and especially the tabloid “kiddy porn”. The NSPCC says that such terms give “a misleading and potentially trivialising impression of what is a very serious crime”, and favours the term “child abuse images”.
+Say **child sexual abuse images**or **child abuse images**rather than “child pornography”, “child porn” and especially the tabloid “kiddy porn”. The NSPCC says that such terms give “a misleading and potentially trivialising impression of what is a very serious crime”, and favours the term “child abuse images”.
 
 Avoid using the term “historical” to describe sexual abuse crimes from the past. Survivors, particularly adults who were abused as children, feel the term undermines the long-lasting impact of the crimes. Try to date the crimes (year, decade etc) instead, or say they happened in the past eg “Detectives are investigating allegations of child sexual abuse from more than 30 years ago.” Exceptions may be necessary in court cases where specific wording is required. (See also **abuse.**)
 
@@ -2061,11 +2061,11 @@ A survey by the Plain English Campaign found that the most irritating phrase in 
 
 **Climate Camp** — disbanded in March 2011; its full name was Camp for Climate Action
 
-**climate change** — is no longer considered to accurately reflect the seriousness of the overall situation; use **climate emergency** or **climate crisis** instead to describe the broader impact of climate change. However, use c**limate breakdown** or **climate change** or **global heating** when describing it specifically in a scientific or geophysical sense eg “Scientists say climate breakdown has led to an increase in the intensity of hurricanes”
+**climate change** — is no longer considered to accurately reflect the seriousness of the overall situation; use **climate emergency** or **climate crisis** instead to describe the broader impact of climate change. However, use c**limate breakdown**or **climate change** or **global heating** when describing it specifically in a scientific or geophysical sense eg “Scientists say climate breakdown has led to an increase in the intensity of hurricanes”
 
 **Climate Change Committee** — the UK independent adviser on climate change. Previously known as the Committee on Climate Change
 
-**climate science denier** or **climate denier** — The OED defines a sceptic as “a seeker of the truth; an inquirer who has not yet arrived at definite conclusions”.
+**climate science denier**or **climate denier** — The OED defines a sceptic as “a seeker of the truth; an inquirer who has not yet arrived at definite conclusions”.
 
 Most “climate sceptics”, in the face of overwhelming scientific evidence, deny climate change is happening, or is caused by human activity, so denier is more accurate
 
@@ -2309,13 +2309,13 @@ The one thing to avoid, unless you want people who care about such things to giv
 
 **convince or persuade?** — Having convinced someone of the facts, you might persuade them to do something, although you can be persuaded to do something without necessarily being convinced that it’s the right thing
 
-**Co-operative Bank (**abbreviation: **Co-op bank), Co-operative Group, Co-operative party**
+**Co-operative Bank (**abbreviation:**Co-op bank), Co-operative Group, Co-operative party**
 
 **Co-op** — as in “I still shop at the Co-op”
 
 **co-operative movement** — when talking about Robert Owen, the Rochdale Pioneers, etc
 
-**co-operative** — (abbreviation: **co-op**) as in a housing co-operative
+**co-operative** — (abbreviation:**co-op**) as in a housing co-operative
 
 **cooperative, cooperate, cooperation** — when used in a general sense, as in “they were surprisingly cooperative when asked to work longer hours for less money”
 
@@ -2395,7 +2395,7 @@ The one thing to avoid, unless you want people who care about such things to giv
 
 **CPS** — Crown Prosecution Service
 
-**Cradock, Fanny** (1909-94) TV chef, often misspelt as “Craddock”
+**Cradock, Fanny**(1909-94) TV chef, often misspelt as “Craddock”
 
 **crapulent, crapulous** — drunk; hence **crapula**, hangover
 
@@ -2525,7 +2525,7 @@ Writers who use cusp under the impression that it is a clever way to say on the 
 
 ## D
 
-> ‘But far too numerous was the Herd of such\
+> ‘But far too numerous was the Herd of such 
 > Who think too little and who talk too much.’ **John Dryden**
 
 **dachshund**
@@ -2612,7 +2612,7 @@ Simplistic labels may also be misleading: we published a clarification after cal
 
 **D-day** — 6 June 1944, or used figuratively (“Monday is D-day for the Blades’ promotion hopes”)
 
-**de or di** — for names, see entry under “[foreign names](<https://www.theguardian.com/guardian-style-guide-f#:~:text=misspell%20their%20names-,foreign%20names,-The%20French%20(or>)”
+**de or di** — for names, see entry under “[foreign names](https://www.theguardian.com/guardian-style-guide-f#:~:text=misspell%20their%20names-,foreign%20names,-The%20French%20(or)”
 
 **Dbeibah, Abdul Hamid** — prime minister of Libya’s Tripoli-based government
 
@@ -2706,8 +2706,7 @@ The distinction is important because the Republicans use “Democrat” as an ad
 
 **denier** — one who denies, as in “Holocaust denier”.
 
-The OED defines a sceptic as “a seeker of the truth; an inquirer who has not yet arrived at definite conclusions”, which is highly flattering to “climate change sceptics” who are literally in denial about the overwhelming scientific evidence and deny that climate change is happening or is caused by human activity, so denier is the more accurate, and our preferred, term.
-
+The OED defines a sceptic as “a seeker of the truth; an inquirer who has not yet arrived at definite conclusions”, which is highly flattering to “climate change sceptics” who are literally in denial about the overwhelming scientific evidence and deny that climate change is happening or is caused by human activity, so denier is the more accurate, and our preferred, term.\
 denier is also a unit of weight for fibre, eg 10-denier tights
 
 **De Niro, Robert**
@@ -2775,7 +2774,7 @@ Hence self-deprecating humour or remark, not “self-depreciating”
 
 **despoil** — but **despoliation**
 
-**dessert** — pudding, but **just deserts**
+**dessert** — pudding, but**just deserts**
 
 **detente**
 
@@ -2959,7 +2958,7 @@ Use the following endnote if a story is about a murder/suicide:
 
 **Dominican Republic** — independent Spanish-speaking country that shares the island of Hispaniola with Haiti
 
-**Donbas** — not Donbass for the region of Ukraine
+**Donbas** — not Donbass for theregion of Ukraine
 
 **doner** — kebab
 
@@ -3009,7 +3008,7 @@ Use the following endnote if a story is about a murder/suicide:
 
 **dozen** — precisely, not approximately, 12
 
-**Dr** — at first mention for people practising as a doctor in the field in which they gained that qualification, including medical and academic doctors and doctors of divinity (but not surgeons or holders of juris doctor law degrees and not, for example, a politician who happens to have a PhD in history or a medical qualification); thereafter, just use surname except in leading articles
+**Dr** — at first mention for people practising as a doctor in the field in which they gained that qualification, including medical and academic doctors and doctors of divinity (but not surgeons or holders of juris doctor law degreesand not, for example, a politician who happens to have a PhD in history or a medical qualification); thereafter, just use surname except in leading articles
 
 **draconian**
 
@@ -3035,7 +3034,7 @@ Use the following endnote if a story is about a murder/suicide:
 
 **drone** — honeybee whose function is to mate with the queen, and by extension therefore someone who lives off the work of others (the worker bees); however, it seems to be used increasingly to mean something like an obedient, unimaginative worker (“office drone”)
 
-**drug companies**, **drug dealer**, **drug raid**, **drug squad**, **drug tsar** — not drugs raid, etc
+**drug companies**, **drug dealer**,**drug raid**, **drug squad**,**drug tsar** — not drugs raid, etc
 
 **drug use** — a more accurate and less judgmental term than “drug abuse” or “misuse” (often all three terms have been scattered randomly through the same reports)
 
@@ -3083,7 +3082,7 @@ There is no such controversy about “due to” in other contexts – rent is du
 
 **Dürer, Albrecht** — (1471-1528) German painter
 
-**dutch auction**, **dutch courage**, **dutch treat** — but **double Dutch**
+**dutch auction**,**dutch courage**, **dutch treat** — but **double Dutch**
 
 **DVD** — stands for digital versatile disc
 
@@ -3173,7 +3172,7 @@ The possessive is singular: they shook each other’s hand
 
 **E coli** — It is not normally necessary to use the full name, *Escherichia coli*. As with other taxonomic names, italicise in copy but use roman in headlines and standfirsts; no full point.
 
-Note that *E coli* is a bacterium, not a virus
+Note that *E coli*is a bacterium, not a virus
 
 **eco-friendly** — but **ecohome**, **ecosystem**, **ecotown**, **ecowarrior**
 
@@ -3777,14 +3776,14 @@ Occasionally, using first names in features or interviews will strike the most a
 
 **first responders** — avoid, prefer emergency services
 
-**first world war, second world war** — but **world war three**
+**first world war, second world war** — but**world war three**
 
 **fish populations** — preferable to fish stocks
 
 **fisher/fishers** — rather than fisherman/fishermen or fisherwoman/fisherwomen. But fisherman’s jumper
 
-**fission or fusion?** — In nuclear fission, the nucleus of an atom splits to produce two smaller elements often releasing free subatomic particles and energy.
-
+**fission or fusion?**\
+In nuclear fission, the nucleus of an atom splits to produce two smaller elements often releasing free subatomic particles and energy.\
 In nuclear fusion, two or more atomic nuclei come together and combine. In the process some of their mass is converted into large amounts of energy. Fusion is the reaction that powers the sun
 
 **fit** — avoid using this term to describe a seizure
@@ -3817,7 +3816,7 @@ In nuclear fusion, two or more atomic nuclei come together and combine. In the p
 
 **flaunt or flout?** — to flaunt is to make a display of something, as in flaunting wealth; to flout is to show disregard for something, as in flouting the seatbelt law.
 
-Think of Max Bialystock in The Producers admiring a white Rolls-Royce in the street: “That’s it, baby, when you’ve got it, flaunt it, flaunt it!” Then think of Bialystock and Bloom, his partner, flouting the law – as well as the principles of good taste – by staging Springtime for Hitler
+Think of Max Bialystock in TheProducersadmiring a white Rolls-Royce in the street: “That’s it, baby, when you’ve got it, flaunt it, flaunt it!” Then think of Bialystock and Bloom, his partner, flouting the law – as well as the principles of good taste – by staging Springtime for Hitler
 
 **fledgling** — not fledgeling
 
@@ -3865,7 +3864,7 @@ In the UK, the ground floor is at street level and the first floor is one level 
 
 **follow-up** — noun; **follow up** verb
 
-**font** — receptacle for baptism, digital file (originally a foundry) that contains a typeface; **fount** of all knowledge and wisdom
+**font** — receptacle for baptism, digital file (originally a foundry) that contains a typeface; **fount**of all knowledge and wisdom
 
 **food bank**
 
@@ -3887,8 +3886,7 @@ The former means for all (of) its worth (of is implied), as in for all (of) its 
 
 **foreign names** — The French (or French origin) de or le and the Dutch van are normally lowercase when the name is full out: eg Charles de Gaulle, Graeme le Saux, Giovanni van Bronckhorst; but De Gaulle, Le Saux, Van Bronckhorst when written without forenames. A notable exception in France is the National Rally leader, Marine Le Pen (uppercase L).
 
-In Belgium, on the other hand, the Van is often uppercase even when the name is full out, as, for example, in the case of the former president of the European Council Herman Van Rompuy.
-
+In Belgium, on the other hand, the Van is often uppercase even when the name is full out, as, for example, in the case of the former president of the European Council Herman Van Rompuy.\
 The Italian De or Di is normally uppercase, eg Antonio Di Natale.
 
 As ever, we seek to follow the person in question’s own preference in this regard, when we are aware of it
@@ -3969,7 +3967,7 @@ Civic Platform (PO) (Platforma Obywatelska in Polish); part of the Civic Coaliti
 
 **forklift truck**
 
-**formally** — in a formal manner; **formerly** in the past: “He formerly dressed formally, but now he’s a slob.”
+**formally** — in a formal manner;**formerly**in the past: “He formerly dressed formally, but now he’s a slob.”
 
 Everyone knows this, but they are frequently mixed up
 
@@ -4023,7 +4021,7 @@ Do not mix fractions and percentages in the same story
 
 **freefall**
 
-**Freemasonry, the Freemasons, Freemason, Mason** — for the semi-secret society and its members; but **masonic,** adjective referring to Freemasonry and its practices
+**Freemasonry, the Freemasons, Freemason, Mason** — for the semi-secret society and its members; but **masonic,**adjective referring to Freemasonry and its practices
 
 **freeport**
 

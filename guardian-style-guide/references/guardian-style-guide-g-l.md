@@ -128,7 +128,7 @@ Men (rarely women – funny, that) who occasionally question our policy and accu
 
 The refugee convention of 1951, though signed in Geneva, is not part of the Geneva conventions. It is the key legal document in defining who is a refugee, their rights and the legal obligations of states
 
-**genocide** — the UN convention approved in 1948 defines genocide as “any of the following acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such: (a) killing members of the group; (b) causing serious bodily or mental harm to members of the group; (c) deliberately inflicting on the group conditions of life calculated to bring about its physical destruction in whole or in part; (d) imposing measures intended to prevent births within the group; (e) forcibly transferring children of the group to another group”
+**genocide** — the UN convention approved in 1948 defines genocide as“any of the following acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such: (a) killing members of the group; (b) causing serious bodily or mental harm to members of the group; (c) deliberately inflicting on the group conditions of life calculated to bring about its physical destruction in whole or in part; (d) imposing measures intended to prevent births within the group; (e) forcibly transferring children of the group to another group”
 
 **geoengineering**
 
@@ -506,7 +506,7 @@ The boy is six and a half but a six-and-a-half-year-old boy
 
 **harebrained** — not hairbrained
 
-**hare lip** — never use: say **cleft lip** or **cleft palate**
+**hare lip** — never use: say**cleft lip** or **cleft palate**
 
 **Hargeisa** — not Hargeysa; capital of Somaliland
 
@@ -642,7 +642,7 @@ As always, the most important thing is to think of the readers and remember that
 
 **Hergé** — pen name of Georges Remi (1907-83), Belgian creator of Tintin
 
-**Heritage Lottery Fund** — now called the **National Lottery Heritage Fund**
+**Heritage Lottery Fund** — now called the**National Lottery Heritage Fund**
 
 **hermaphrodite** — is a term used in biology to describe an animal that can reproduce in either a male or female manner. The appropriate term for a person of undetermined sex is intersex
 
@@ -857,7 +857,7 @@ South Devon healthcare NHS trust
 
 **hotels** — a hotel not “an”; do not cap up “hotel”: the Dorchester, the Ritz, the Grand hotel, Brighton, etc (but don’t be silly and lowercase Hotel California)
 
-**hot flush** — a **hot flash** in American English
+**hot flush** — a**hot flash**in American English
 
 **hotline, hotspot**
 
@@ -993,7 +993,7 @@ the video for Kylie Minogue’s Can’t Get You Out of My Head
 
 **ie** — no full points or commas, ie like this
 
-**if not** can be ambiguous: does “it is the most beautiful castle in France, if not the whole of Europe” mean “and maybe in the whole of Europe” or “but not in the whole of Europe”?
+**if not**can be ambiguous: does “it is the most beautiful castle in France, if not the whole of Europe” mean “and maybe in the whole of Europe” or “but not in the whole of Europe”?
 
 **Igbo** — not Ibo, for the ethnic group in Nigeria
 
@@ -1029,7 +1029,7 @@ Homer: “What are you inferring?”\
 Lisa: “I’m not inferring anything. You infer; I imply.”\
 Homer: “Well that’s a relief.”
 
-Many people use infer when they mean imply, and they are in good company: Milton, Sir Walter Scott and Mervyn Peake in Titus Groan all did it
+Many people use infer when they mean imply, and they are in good company: Milton, Sir Walter Scott and Mervyn Peake inTitus Groan all did it
 
 **impostor** — not imposter
 
@@ -1051,7 +1051,7 @@ The once widely used “in Oxford Street”, “in the high street” etc appear
 
 **inchoate** — Nothing to do with chaos, it means newly formed, whether describing someone’s literary skills or the universe shortly after the big bang
 
-**incidence** — frequency or amount, eg a high incidence of incidents
+**incidence** — frequency oramount, eg a high incidence of incidents
 
 **incident** — has political connotations, so attack or clash is often preferable; within a couple of years of the massacre in Tiananmen Square the Chinese government was referring to it as an “incident” or even “alleged incident”
 
@@ -1069,9 +1069,9 @@ The once widely used “in Oxford Street”, “in the high street” etc appear
 
 **india rubber**
 
-**Indian placenames** — Bombay is now known as **Mumbai**, Madras is now **Chennai**, Calcutta is now **Kolkata** and Allahabad is now **Prayagraj** (though make clear it was formerly Allahabad until the new name is more widely known)
+**Indian placenames** — Bombay is now known as **Mumbai**, Madras is now **Chennai**, Calcutta is now **Kolkata** and Allahabad is now**Prayagraj**(though make clear it was formerly Allahabad until the new name is more widely known)
 
-**indie** — music, films, etc; **Indy** abbreviation for the Indy 500 car race and the Independent, a newspaper (now online only)
+**indie** — music, films, etc; **Indy**abbreviation for the Indy 500 car race and the Independent, a newspaper (now online only)
 
 **Indigenous** — uppercase I for people, but indigenous for flora and fauna
 
@@ -1173,9 +1173,9 @@ extreme; **intensive** thorough\
 
 **intifada**
 
-**into or in to?** — If you go into a room or look into something, it’s one word; if you call in to complain, listen in to someone’s conversation, or go in to see them, it’s two.
+**into or in to?** — If you go into a room or look into something, it’s one word; if you call in to complain, listen in tosomeone’s conversation, or go in to see them, it’s two.
 
-On to is two words [See on to](<https://www.theguardian.com/guardian-observer-style-guide-o#on%20to>)
+On to is two words [See on to](https://www.theguardian.com/guardian-observer-style-guide-o#on to)
 
 **introducing people** — Do not use the following construction to introduce a speaker or a subject: “Foreign secretary Philip Hammond said ... ” Use the definite article and commas to separate the job from the name, like this: “Philip Hammond, the foreign secretary ... ” (there is only one person with this specific post).
 
@@ -1191,17 +1191,17 @@ Another example: “Michael Billington, the Guardian’s theatre critic, gave hi
 
 **invariable, invariably** — unchanging; often used wrongly to mean hardly ever changing
 
-**inveigh** attack; **inveigle** coax — “Labour MPs inveighed against Tony Blair for inveigling them into the plan to invade Iraq”
+**inveigh**attack; **inveigle** coax — “Labour MPs inveighed against Tony Blair for inveigling them into the plan to invade Iraq”
 
-**invitation** noun
+**invitation**noun
 
-**invite** verb; so you do not send someone an “invite”
+**invite**verb; so you do not send someone an “invite”
 
 **iPad, iTunes**
 
 **IPCC** — the Intergovernmental Panel on Climate Change
 
-**iPhone 6S, iPhone 6C** plural **6Ss, 6Cs**
+**iPhone 6S, iPhone 6C**plural **6Ss, 6Cs**
 
 **iPod** — only when you are sure it is an Apple iPod; the generic term is MP3 player or digital audio player
 
@@ -1291,7 +1291,7 @@ Never use italics in headlines or standfirsts
 
 > ‘Read over your compositions, and where ever you meet with a passage which you think is particularly fine, strike it out.’ **Samuel Johnson**
 
-**J** — joules; **kJ** kilojoules
+**J** — joules; **kJ**kilojoules
 
 **Jabaliya** — not Jabalia for the town in Gaza
 
@@ -1395,7 +1395,7 @@ have six children, all of whom have the surname Jolie-Pitt. Their charitable fou
 
 **judgment** — Try to resist the temptation to add the word “call”
 
-**judges** — in England and Wales have different titles according to the courts in which they work.
+**judges** — in England and Waleshave different titles according to the courts in which they work.
 
 Courts below the high court:\
 Judge Smith, Judge Brown; thereafter Smith, Brown
@@ -1435,7 +1435,7 @@ In Scotland, judges are always Lord or Lady. So Lord Smith, Lady Brown. Sheriffs
 
 **Kadazan-Dusun** — two culturally linked indigenous peoples in Sabah, Malaysia; **Kadazandusun** their language
 
-**kaffir lime** — use **makrut lime** instead; note that it is makrut and not, as Wikipedia has it, makrud. Used in south-east Asian cooking and to flavour drinks
+**kaffir lime** — use **makrut lime**instead; note that it is makrut and not, as Wikipedia has it, makrud. Used in south-east Asian cooking and to flavour drinks
 
 **kafir** — derogatory Arabic term for infidel or unbeliever; the plural is **kuffar**
 
@@ -1888,8 +1888,7 @@ lay (a table, an egg, put something down), past tense laid
 
 **like or as if?** — Using like as a preposition (“ride like the wind”) is uncontroversial. Using it as a conjunction, introducing a clause that contains a verb (“ride like you’re riding a motorbike”, “he behaved like he was drunk”) will annoy many readers.
 
-The simple way to keep everyone happy is to use like when the verb is followed by a noun (“he ran like a gazelle”) and as if when the verb is followed by a clause (“he ran as if he had seen a ghost”).
-
+The simple way to keep everyone happy is to use like when the verb is followed by a noun (“he ran like a gazelle”) and as if when the verb is followed by a clause (“he ran as if he had seen a ghost”).\
 Ogden Nash pointed out that it’s As You Like It, not Like You Like It, although Shakespeare in fact did use like as a conjunction
 
 **like or such as?** — “Cities like Manchester are wonderful” suggests the writer has in mind, say, Sheffield or Birmingham; it’s clearer to say “cities such as Manchester” if that is what she means.
@@ -1961,7 +1960,7 @@ a term used, particularly by sports commentators, to denote an event that is not
 (rhymes with clothe) detest; **loth** (rhymes with oath) reluctant:\
 “I’m loth to do anything he says because I loathe him so much.”
 
-You sometimes see loth spelt as loath, which is not incorrect, but only adds to the confusion with loathe
+You sometimes see loth spelt as loath, which is not incorrect, butonly adds to the confusion with loathe
 
 **lobby** — requires great care: unless you are writing about, say, the parliamentary lobby or US lobby system, it will at best sound vague and patronising, and at worst pejorative or offensive (“the Jewish lobby”). If you are talking about specific pressure groups, say who they are
 

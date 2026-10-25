@@ -106,7 +106,7 @@ Labour will need silver bullet to remove Cameron from No 10
 
 **major** — a major case of overuse; avoid except in a military context: big, main and leading are among the alternatives
 
-**majority** — Unless you are specifically talking about the larger part of a measurable number, “most of*”* normally sounds more natural*:* “a clear majority had voted Conservative, so he resolved to spend most of the next five years in the pub”
+**majority** — Unless you are specifically talking about the larger part of a measurable number, “most of*”*normally sounds more natural*:*“aclear majority had voted Conservative, so he resolved to spend most of the next five years in the pub”
 
 **makeover, makeup** — (nouns) one word; (verbs) two words: making up is hard to do
 
@@ -301,7 +301,7 @@ To quote “the Loaf” himself:\
 
 **menage** — no accent
 
-**menopause** — the definite article is not needed. Say someone is going through menopause, not going through the menopause. Maintain the distinction between perimenopause and menopause, where possible. Perimenopause is when you have symptoms of menopause but your periods have not stopped. It ends and you reach menopause when you have not had a period for 12 months
+**menopause** — the definite article is not needed.Say someone is going through menopause, not going through the menopause. Maintain the distinction between perimenopause and menopause, where possible. Perimenopause is when you have symptoms of menopause but your periods have not stopped. It ends and you reach menopause when you have not had a period for 12 months
 
 **Menorca** — not Minorca
 
@@ -395,7 +395,7 @@ The Metropolitan police are plural, like other forces, but the Met is singular, 
 
 **mid-60s, mid-90s, etc**
 
-**mid-Atlantic** — but **transatlantic**
+**mid-Atlantic** — but**transatlantic**
 
 **midday**
 
@@ -411,7 +411,7 @@ The Metropolitan police are plural, like other forces, but the Met is singular, 
 
 **midget** — considered by some to be offensive, certainly more so than dwarf; best to ask the people you are writing about how they prefer to describe themselves
 
-**Midlands** — East Midlands, West Midlands
+**Midlands — East Midlands, West Midlands**
 
 **midnight** — not 12 midnight, 12am or 12pm. Midnight on Sunday means the end of Sunday, not the beginning
 
@@ -423,7 +423,7 @@ The Metropolitan police are plural, like other forces, but the Met is singular, 
 
 **Migrant** should be a neutral term, but is widely used in a pejorative way that dehumanises people and presents them as a threat. It is not banned, but we should use only when necessary; the alternatives are often preferable.
 
-**Migration crisis** is a better term than “migrant crisis” because it suggests that the crisis is a complex global issue, not something that can be blamed on those doing the migrating. An alternative is **refugee crisis**.
+**Migration crisis**is a better term than “migrant crisis” because it suggests that the crisis is a complex global issue, not something that can be blamed on those doing the migrating. An alternative is **refugee crisis**.
 
 Where possible, we should use the word **people** rather than “migrants”. It’s an accurate description, rather than a dehumanising label. Say “100 people drowned” or “2,000 people were rescued”, rather than “100 migrants” or “2,000 migrants”. Of course we need to give as much information as possible about these people – where they come from, where they are trying to get to, and why.
 
@@ -568,7 +568,7 @@ Generation X applies to people born between the mid-1960s and the late 1970s.
 
 **morbidity** — can mean the state of being morbid (taking an unusual interest in death or unpleasant events); but morbidity, also known as the morbidity rate, also means the relative incidence of a disease in a specific locality
 
-***More details soon …*** — Please use this wording at the bottom of a web article if you wish to indicate it is a breaking news story that will be updated and extended shortly
+***More details soon …***Please use this wording at the bottom of a web article if you wish to indicate it is a breaking news story that will be updated and extended shortly
 
 **more than** — generally preferable to over: there were more than 20,000 people at the game, it will cost more than £100 to get it fixed; but she is over 18
 
@@ -677,7 +677,7 @@ Not to be confused with **Muphry’s law** – “the editorial application of t
 
 **Myanmar** — not Burma, but its people and language are Burmese. The capital is Naypyidaw, not Yangon.
 
-**myriad** — A large, unspecified number, derived from the ancient Greek for ten thousand. The OED lists various ways it is used: as a singular noun (there is *a myriad* of people outside), a plural noun (there are *myriads* of people outside), or an adjective (there are *myriad* people outside)
+**myriad** — A large, unspecified number, derived from the ancient Greek for ten thousand. The OED lists various ways it is used: as a singular noun (there is *a myriad*of people outside), a plural noun (there are *myriads* of people outside), or an adjective (there are *myriad* people outside)
 
 **Myspace** — no longer MySpace
 
@@ -685,7 +685,7 @@ Not to be confused with **Muphry’s law** – “the editorial application of t
 
 ## N
 
-> ‘One thing that literature would be greatly the better for\
+> ‘One thing that literature would be greatly the better for
 > would be a more restricted employment by authors of simile and metaphor.’ **Ogden Nash**
 
 **Nabokov, Vladimir** — (1899-1977) Russian-born author of Lolita; not Nabakov
@@ -780,7 +780,7 @@ Beware of attributing the actions of a government or a military force to a natio
 
 **naysayer** — a “neighsayer”, as we have been known to spell it, would be a horse
 
-**Nazi, neo-Nazi** — but lowercase for **nazism** and in such phrases as **grammar nazi** (which should be used very sparingly)
+**Nazi, neo-Nazi** — but lowercase for **nazism** and in such phrases as **grammar nazi**(which should be used very sparingly)
 
 **’Ndrangheta** — Calabrian version of the mafia
 
@@ -792,7 +792,7 @@ Beware of attributing the actions of a government or a military force to a natio
 
 **Neet** — a young person (aged 16 to 24) who is not in education, employment or training
 
-**negligent** — careless; **negligible** slight
+**negligent** — careless; **negligible**slight
 
 **Nell Gwyn** — not Gwynn, or Gwynne
 
@@ -856,7 +856,7 @@ The meaning of net migration is widely understood, but for greater clarity you c
 
 **new wave** — lowercase for music of the late 70s and early 80s (the likes of Talking Heads); also for any other new wave (eg the Moroccan new wave in cinema)
 
-**new year** — lc; including **new year honours list, new year resolutions** and **happy new year**; but **New Year’s Day**, **New Year’s Eve**
+**new year** — lc; including **new year honours list, new year resolutions**and**happy new year**;but **New Year’s Day**, **New Year’s Eve**
 
 **New York City** — but **New York state**
 
@@ -896,7 +896,7 @@ New York neighbourhoods take initial capital, eg Lower East Side, Upper West Sid
 
 **niqab** — veil that covers the face apart from the eyes
 
-**Nissan** — cars; **Nissen** hut
+**Nissan** — cars;**Nissen** hut
 
 **nitric, nitrogen or nitrous?** — nitric oxide (chemical name NO) and nitrogen dioxide (chemical name NO2) are both found in diesel fumes and are collectively referred to as nitrogen oxides, or NOx. High concentrations of nitrogen dioxide cause inflammation of the airways and can also react to form other secondary pollutants, such as ozone, which create their own health problems.
 
@@ -1113,7 +1113,7 @@ An alliance of leftwing political parties in France. For its full name use the t
 
 **Oh not O** — except in phrases of invocation or hymn titles, eg O God, Our Help in Ages Past
 
-**oilfield,** but **oil well**
+**oilfield,**but**oil well**
 
 **oil painting**
 
@@ -1159,7 +1159,7 @@ Grammatically, we are talking not about the noun “one” but the noun phrase �
 
 “One in six is … ” is also unnecessarily (and possibly misleadingly) specific, implying that of any six people from the group you take, exactly one will be as described. “One in six” means one-sixth on average over the whole group, and a plural verb better reflects this. We wouldn’t say “Only 1% of Republican voters is able to point to Iraq on a map” just because there’s a “one” in there
 
-**one-nation politics** — but **one nation Tory** for individual Conservatives, and **One Nation group** for the caucus of Conservative MPs formed in April 2019
+**one-nation politics** — but **one nation Tory**for individual Conservatives, and **One Nation group** for the caucus of Conservative MPs formed in April 2019
 
 **one-stop shop**
 
@@ -1187,7 +1187,7 @@ Say “the only” or “one of the few” rather than “one of the only”, wh
 
 **Op 58, No 2** — for classical music
 
-**Opec** — Organization of the Petroleum Exporting Countries, but not necessary to spell out
+**Opec** — Organizationof the Petroleum Exporting Countries, but not necessary to spell out
 
 **Open Society Foundations** — plural
 
@@ -1372,7 +1372,7 @@ Initial capital for parliaments referred to by their name in the relevant langua
 
 **Parthenon marbles** — official name, recognised by both Britain and Greece, for the Elgin marbles
 
-**partially or partly?** — Use partial or partially to mean the opposite of impartial; otherwise partly is generally preferable: “I may be being partial, but booking me to stay in a partly built hotel merits a refund”
+**partially or partly?** — Use partialorpartially to mean the opposite of impartial; otherwise partly is generally preferable: “I may be being partial, but booking me to stay in a partly built hotel merits a refund”
 
 **part-time**
 
@@ -1573,7 +1573,7 @@ While this term is useful in headlines, it should be avoided in text as a descri
 
 **pillbox**
 
-**pilot** — a maritime pilot is someone with expertise in manoeuvring vessels and knowledge of a local stretch of water who helps ships navigate their way in confined conditions. Saying someone who is inexpertly steering a small boat or dinghy is piloting it gives a misleading impression
+**pilot** — a maritime pilot issomeone with expertise in manoeuvring vessels and knowledge of a local stretch of water who helps ships navigate their way in confined conditions. Saying someone who is inexpertly steering a small boat or dinghy is piloting it gives a misleading impression
 
 **Pimm’s** — the most popular version is Pimm’s No 1 cup, which has gin as its base (the others are or were No 2, whisky; No 3, brandy; No 4, rum; No 5, rye; and No 6, vodka)
 
@@ -1583,7 +1583,7 @@ While this term is useful in headlines, it should be avoided in text as a descri
 
 **pinstripe** — suit, not pinstriped
 
-**pipe bomb**, but **pipeline**
+**pipe bomb**,but **pipeline**
 
 **Pissarro, Camille** — (1830-1903) French impressionist painter; his son Lucien (1863-1944) was also an artist
 
@@ -1847,9 +1847,9 @@ Take care after phrases following “to”: the subheading “to we Conservative
 
 **pre-Raphaelite**
 
-**prescribe, prescriptive** — do something; **proscribe, proscriptive** don’t: prescriptive grammarians love to tell you what to do and to proscribe things they disapprove of
+**prescribe, prescriptive** — do something;**proscribe, proscriptive** don’t: prescriptive grammarians love to tell you what to do and to proscribe things they disapprove of
 
-**presently** — What exactly does this mean? I will tell you presently *–* soon – is the traditional British English usage, whereas in American English it means at present, and is usually redundant (“we are presently third in the table”). To avoid ambiguity, say *soon* when you mean soon, and don’t say anything when you mean now.
+**presently** — What exactly does this mean? I will tell you presently*–*soon – is the traditional British English usage, whereas in American English it means at present, and is usually redundant (“we are presently third in the table”). To avoid ambiguity, say *soon* when you mean soon, and don’t say anything when you mean now.
 
 There is a similar problem with momentarily, which means for a moment or briefly in British English, and very soon to American (and some British) speakers. Best avoided
 
@@ -2398,7 +2398,7 @@ Once it has been established who is speaking, there is no need to keep attributi
 
 **Revenue and Customs** — or **HMRC**: either is acceptable shorthand for HM Revenue and Customs, formed in 2005 from a merger of the Inland Revenue and HM Customs and Excise
 
-**Revolutionary Guards** — (plural) in Iran. Prefer [Islamic Revolutionary Guard Corps](<https://www.theguardian.com/guardian-style-guide-i#:~:text=Islamic%20Revolutionary%20Guard%20Corps%20(IRGC)%0APrefer%20to%20Revolutionary%20Guards%2C%20but%20never%20Revolutionary%20Guard>) (IRGC). Note “Revolutionary Guard” is meaningless in Iran.
+**Revolutionary Guards** — (plural) in Iran. Prefer [Islamic Revolutionary Guard Corps](https://www.theguardian.com/guardian-style-guide-i#:~:text=Islamic%20Revolutionary%20Guard%20Corps%20(IRGC)%0APrefer%20to%20Revolutionary%20Guards%2C%20but%20never%20Revolutionary%20Guard) (IRGC). Note “Revolutionary Guard” is meaningless in Iran.
 
 In Libya, however, Muammar Gaddafi had his very own Revolutionary Guard (singular), now disbanded. In Iraq, Saddam Hussein also had one
 
@@ -2453,8 +2453,8 @@ We asked: “Who are the most powerful people in the UK media right now?”\
 
 **riverbank, riverbed**
 
-**rivers** — The “River” part comes first in the names of British rivers: the River Severn, River Thames, etc; elsewhere, it normally comes second: the Yellow River, Hawkesbury River, etc.
-
+**rivers**\
+The “River” part comes first in the names of British rivers: the River Severn, River Thames, etc; elsewhere, it normally comes second: the Yellow River, Hawkesbury River, etc.\
 Most of the time it can be left out altogether, however: the Amazon, Thames, Yangtze, etc.
 
 Rivers that are widely known as Rio in English do not have to be translated to River, for example the Rio Grande in the US, the Rio Negro in South America
@@ -2533,13 +2533,13 @@ In a UK setting use Roman Catholic in describing Roman Catholic organisations an
 
 **Royal Academy of Arts** — usually known simply as the Royal Academy
 
-**Royal Air Force** — or **RAF**
+**Royal Air Force** — or**RAF**
 
 **Royal Ballet**
 
 **Royal Botanic Garden** — (Edinburgh)
 
-**Royal Botanic Gardens** — (London), also known as **Kew Gardens** or simply **Kew**
+**Royal Botanic Gardens** — (London), also known as**Kew Gardens** or simply **Kew**
 
 **Royal College of Nursing** — not the Royal College of Nurses
 
