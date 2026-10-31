@@ -1,0 +1,91 @@
+name: Sync Tropes Catalogue
+
+on:
+  schedule:
+    # Run every Sunday at 21:00 UTC, after the Guardian reference sync.
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  sync-tropes:
+    name: Sync tropes catalogue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh tropes catalogue
+        working-directory: on-writing-well
+        run: python3 update_tropes.py --write
+
+      - name: Create pull request if changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            Update tropes catalogue
+
+            Automated sync of the AI writing tropes catalogue from tropes.fyi.
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: update-tropes-catalogue
+          delete-branch: true
+          title: "Update tropes catalogue"
+          body: |
+            ## Summary
+
+            Automated weekly sync detected a change in the tropes.fyi catalogue.
+
+            ## Changes
+
+            `on-writing-well/references/tropes.md` was refreshed by
+            `update_tropes.py`. The sync step prints the patterns added and
+            removed when run locally.
+
+            ## Verification
+
+            Review the diff, then update the snapshot date in
+            `on-writing-well/SKILL.md` if the change is accepted.
+
+      - name: Report failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Tropes sync failed';
+            const open = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = open.data.find((issue) => issue.title === title);
+            if (existing) {
+              core.info(`Open issue already exists: #${existing.number}`);
+              return;
+            }
+            const created = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: [
+                'The weekly tropes.fyi sync failed.',
+                '',
+                `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+                '',
+                'To reproduce locally, run `python3 update_tropes.py` in',
+                '`on-writing-well/`. The script prints the error and leaves the',
+                'local catalogue unchanged.'
+              ].join('\n')
+            });
+            core.info(`Opened issue #${created.data.number}`);

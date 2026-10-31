@@ -6,7 +6,7 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 
 ## Skills in this repo
 
-- `on-writing-well`: concise, reader-focused technical documentation guidance.
+- `on-writing-well`: concise, reader-focused technical documentation guidance, with a catalogue of AI writing tropes to avoid.
 - `cbeams-git-commit-messages`: commit message guidance based on Chris Beams'
   seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
@@ -18,6 +18,9 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 skills/
   on-writing-well/
     SKILL.md
+    update_tropes.py
+    references/
+      tropes.md
   cbeams-git-commit-messages/
     SKILL.md
   maintainable-css/
