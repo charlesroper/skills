@@ -11,6 +11,7 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
   seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
 - `guardian-style-guide`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving the author's original voice, structure and argument.
+- `project-narrative`: Write and maintain NARRATIVE.md, the evidence-linked story of a project for humans and agents.
 
 ## Structure
 
@@ -34,6 +35,8 @@ skills/
       guardian-style-guide-g-l.md
       guardian-style-guide-m-r.md
       guardian-style-guide-s-z.md
+  project-narrative/
+    SKILL.md
 ```
 
 Each skill is defined in its own `SKILL.md`.

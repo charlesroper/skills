@@ -6,6 +6,9 @@ All notable changes to this repository are documented in this file.
 
 ### Added
 
+- `project-narrative`: Add skill for writing and maintaining evidence-linked
+  project narratives (NARRATIVE.md) in human and agent-friendly blog post format.
+
 - `on-writing-well`: Add the 49-pattern AI writing tropes catalogue from
   tropes.fyi as `references/tropes.md`, with a summary checklist in `SKILL.md`.
 - `on-writing-well`: Add `update_tropes.py`, a standard-library script that
