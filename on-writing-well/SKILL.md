@@ -55,7 +55,7 @@ These patterns make technical writing sound generated. Check the draft against t
 - Do not turn a small technical choice into a claim about the industry.
 - One three-part list in a document is the ceiling.
 - Do not bolt an "-ing" clause onto a sentence to add significance, as in "highlighting its importance".
-- Do not open every bullet with a bold lead-in. Bold a term only when the reader needs to scan for it.
+- Do not open every bullet with a bold lead-in when writing continuous prose or narratives. Bold a term when the reader needs to scan for it (such as reference terms, parameter lists, or subsystem catalogues).
 - Capitalise the first word and proper nouns only in a heading.
 - Use `->` instead of an arrow character, and straight quotes instead of curly quotes.
 
@@ -65,6 +65,7 @@ To check for a newer catalogue, run `python3 update_tropes.py`, or `python updat
 
 ## Examples and formatting conventions
 
+- **Scannability in technical documentation:** For reference documents, API catalogues, setup guides, and walkthroughs, prioritize visual scannability. Use bold lead-in keys (`* **Key:** Description`), numbered steps with action verbs, and fenced code blocks for before and after comparisons. Do not collapse structured technical references or code blocks into continuous prose simply to avoid bold bullets.
 - **Show, don't just tell:** Follow key concepts with a minimal, realistic example. Prefer complete, runnable code snippets that highlight only the relevant lines.
 - **Imperative procedures:** Format sequential procedures as numbered lists where every step starts with an action verb.
 - **Consistent typography:**
