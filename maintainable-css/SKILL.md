@@ -4,7 +4,7 @@ description: Apply the MaintainableCSS methodology to plan, refactor, and review
 license: CC BY-NC-SA 4.0 concepts from maintainablecss.com, adapted for project use
 metadata:
   author: Charles Roper
-  based_on: Adam Silver’s MaintainableCSS
+  based_on: Adam Silver's MaintainableCSS
   source: https://maintainablecss.com/
   version: "1.0"
 ---
