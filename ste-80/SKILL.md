@@ -37,11 +37,9 @@ Defer non-operational writing to `on-writing-well`:
 - **Descriptive paragraphs:** Maximum 6 sentences per paragraph.
 
 ### Action steps and imperative verbs
-- Use numbered lists (`1.`, `2.`, `3.`) for sequential actions.
-- Limit each numbered step to one discrete action.
-- Start each step with an imperative transitive verb in the present tense (*Run*, *Stop*, *Set*, *Verify*).
-- Never combine separate actions into one step with coordinating conjunctions.
-- State conditions before the action (*"If the health check fails, run rollback.sh"*, not *"Run rollback.sh if the health check fails"*).
+- **Numbers for sequences, bullets for alternatives:** Use numbered lists (`1.`, `2.`, `3.`) only when two or more actions must run in chronological order. Use bulleted lists (`-`) or condition-first sentences for mutually exclusive choices, optional flag variants and unordered commands. Never number alternatives or single-action procedures.
+- **One action per step:** Limit each step to one discrete action starting with an imperative transitive verb in the present tense (*Run*, *Stop*, *Set*, *Verify*). Never combine separate actions into one step with coordinating conjunctions.
+- **Conditions and preconditions before actions:** State conditional clauses before the action (*"If the health check fails, run rollback.sh"*, not *"Run rollback.sh if the health check fails"*). Keep location or state preconditions as lead-in clauses (*"From the repository root:"*) before the steps; never pad preconditions into ambient operator actions (*"Open a terminal"*, *"Press enter"*) unless a privileged or non-standard environment is required (*"Open an elevated terminal"*).
 
 ### The 80% vocabulary rule
 - **Retain exact technical terms:** Keep technical nouns, API names, CLI flags, configuration parameters and error codes verbatim (`SIGTERM`, `kubectl`, `--max-retries`, `HTTP 503`).
@@ -94,7 +92,7 @@ Place warnings and cautions directly before the affected step. Never hide safety
 Before delivering output, verify that the text satisfies these five criteria:
 
 1. **Sentence ceilings:** Every procedural step is 20 words or fewer; every descriptive sentence is 25 words or fewer; every paragraph is 6 sentences or fewer.
-2. **Imperative verbs:** Every procedural step begins with an active imperative transitive verb and contains exactly one discrete action.
+2. **Imperative verbs and list types:** Every procedural step begins with an active imperative transitive verb and contains one discrete action; numbered lists are used only for two or more sequential steps; alternatives use bullets or condition-first sentences; ambient actions (*"Open a terminal"*) are omitted.
 3. **Safety warnings:** Every critical risk has a `WARNING:` or `CAUTION:` block placed directly before the affected step using the `[Preventive action]. [Consequence].` format.
 4. **Vocabulary consistency:** Technical terms and flags are exact and consistent across the text, noun clusters do not exceed 3 words, and progressive `-ing` forms are absent.
 5. **Direct delivery:** The text contains zero conversational filler, zero meta-commentary and no introductory or concluding pleasantries.

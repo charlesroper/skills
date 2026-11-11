@@ -48,7 +48,7 @@ class TestWritingFrameworkExercise(unittest.TestCase):
         self.assertTrue(warning_found, "STE-80 runbook must contain a WARNING: block")
         self.assertGreater(len(step_lines), 0, "STE-80 runbook must contain numbered steps")
 
-        # Check procedural step ceiling (<= 20 words per sentence)
+        # Check procedural step ceiling (<= 20 words per sentence) and no ambient filler
         for step in step_lines:
             word_count = len(step.split())
             self.assertLessEqual(
@@ -56,6 +56,15 @@ class TestWritingFrameworkExercise(unittest.TestCase):
                 20,
                 f"STE-80 step exceeds 20 words ({word_count} words): '{step}'",
             )
+            self.assertFalse(
+                step.lower().startswith(("open a terminal", "press enter")),
+                f"STE-80 step contains ambient operator filler: '{step}'",
+            )
+
+        # Verify ste-80/SKILL.md encodes sequences-vs-alternatives and precondition rules
+        ste_skill = (REPO_ROOT / "ste-80" / "SKILL.md").read_text(encoding="utf-8")
+        self.assertIn("Numbers for sequences, bullets for alternatives", ste_skill)
+        self.assertIn("Never number alternatives or single-action procedures", ste_skill)
 
         # Check descriptive prose ceiling (<= 25 words per sentence)
         for prose in prose_lines:
