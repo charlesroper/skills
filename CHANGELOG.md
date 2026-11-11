@@ -6,6 +6,12 @@ All notable changes to this repository are documented in this file.
 
 ### Added
 
+- `setup-writing-framework`: Add interactive scaffolding skill to configure
+  the two-stage Editorial Pipeline in repository `AGENTS.md` or `CLAUDE.md`
+  files, routing Stage 1 drafting (`on-writing-well`, `ste-80`,
+  `project-narrative`, `cbeams-git-commit-messages`) and Stage 2 sub-editing
+  (`guardian-style-guide`).
+
 - `ste-80`: Add standalone skill for operational software documentation, runbooks,
   CLI specs, API guides and troubleshooting steps using an 80% implementation
   of ASD-STE100 (Simplified Technical English).
@@ -35,6 +41,11 @@ All notable changes to this repository are documented in this file.
   `maintainable-css` entry and repository structure diagram (see PR #2).
 
 ### Changed
+
+- Repository instructions: Wire the two-stage Editorial Pipeline (`## Writing framework`)
+  into `AGENTS.md`, routing Stage 1 drafting across `on-writing-well`, `ste-80`,
+  `project-narrative`, and `cbeams-git-commit-messages` through the `guardian-style-guide`
+  Stage 2 Sub-Editor Gate while preserving existing agent guidelines.
 
 - `cbeams-git-commit-messages`: Structure into an ordered 5-step procedure with
   checkable completion criteria and deduplicate instructions, output formatting
