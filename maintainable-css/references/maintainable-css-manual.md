@@ -1,88 +1,160 @@
-# MaintainableCSS Manual (Condensed)
+# MaintainableCSS implementation patterns
 
-Source: https://maintainablecss.com/
+Concrete before-and-after HTML and CSS reference patterns from Adam Silver's [MaintainableCSS](https://maintainablecss.com/).
 
-## 1) Introduction
+## 1. Module vs component and preventing nested cascade bleed
 
-- MaintainableCSS is about modular, scalable, maintainable CSS.
-- Goal: make changes safely as codebase size grows.
+When a parent module styles raw HTML tags (`.header a` or `.panel p`), any child module placed inside it inherits those styles by mistake. Scope parent parts with `.module-component` classes and extract reusable children as standalone modules.
 
-## 2) Semantics
+**Before (cascade bleed and ambiguous hyphens):**
 
-- Prefer semantic class names over visual/utility naming.
-- Semantic names improve readability, searchability, debugging, JS hooks, and test hooks.
-- They reduce accidental global regressions.
-
-## 3) Reuse
-
-- Avoid forced DRY.
-- Prefer clarity over clever abstraction.
-- Duplication is often safer than brittle shared abstractions.
-- Reuse carefully when patterns are truly stable.
-
-## 4) IDs
-
-- Do not use IDs as style hooks due to specificity issues.
-- IDs remain valid for semantics/accessibility needs.
-
-## 5) Conventions
-
-Core pattern:
-
-```css
-.module {}
-.module-component {}
-.module-isState {}
+```html
+<div class="site-header">
+  <a href="/">Brand</a>
+  <div class="user-menu">
+    <a href="/profile">Profile</a> <!-- Bleeds .site-header a styles -->
+  </div>
+</div>
 ```
 
-- Prefix component/state with module name.
-- Keep naming consistent and predictable.
+```css
+.site-header a { font-size: 2rem; font-weight: bold; }
+.user-menu a { font-size: 1rem; /* Forced to override parent font-weight */ }
+```
 
-## 6) Modules
+**After (explicit component hook + independent child module):**
 
-- A module is an independent unit.
-- Components are required parts inside a module.
-- Similar visuals do not guarantee same module.
-- Prefer separate modules to avoid entanglement.
+```html
+<div class="siteHeader">
+  <a class="siteHeader-logo" href="/">Brand</a>
+  <div class="userMenu">
+    <a class="userMenu-link" href="/profile">Profile</a>
+  </div>
+</div>
+```
 
-## 7) State
+```css
+.siteHeader-logo { font-size: 2rem; font-weight: bold; }
+.userMenu-link { font-size: 1rem; }
+```
 
-- Model visual state with explicit classes (for example `module-isEmpty`).
-- Keep state local to module unless state and visuals are truly shared.
-- Do not rely on ARIA attributes alone for styling.
+*Exception for leaf prose containers:* A rich-text container that holds only CMS or Markdown prose and never wraps child UI modules (`.prose p`, `.prose ul`) may style descendant tags directly.
 
-## 8) Modifiers
+---
 
-- Use modifiers for small, well-understood differences.
-- Pattern: `module--variant`.
-- If differences become large, split into a separate module.
+## 2. State classes and ARIA pairing
 
-## 9) Versioning
+Never chain an unprefixed state class (`.basket.isEmpty`) or style `[aria-*]` attributes in isolation when visual transitions differ per module. Apply both the base class and the module-prefixed state class on the element, and keep ARIA attributes for semantics.
 
-- For A/B tests or migrations, duplicate module with a new name (`module2`).
-- Remove old version after rollout decision.
+**Before (chained state and global collision):**
 
-## 10) JavaScript
+```html
+<div class="basket is-empty">...</div>
+```
 
-- JS can share behavior across modules while CSS remains module-specific.
-- Global state class is acceptable only when both behavior and style are identical.
+```css
+.basket.is-empty { background: #fef2f2; }
+.is-empty { display: none; } /* Collides with .basket */
+```
 
-## 11) Organisation
+**After (flat module-prefixed state + ARIA):**
 
-- Organize so code is easy to find.
-- Either central CSS with clear structure or feature/module-local CSS.
-- Avoid over-fragmentation that harms maintainability.
+```html
+<div class="basket basket-isEmpty" aria-live="polite">
+  <p class="basket-emptyMessage">Your basket is empty.</p>
+</div>
+```
 
-## 12) FAQs
+```css
+.basket { background: #fff; }
+.basket-isEmpty { background: #fef2f2; }
+```
 
-- Global element styles are acceptable when truly universal.
-- Otherwise prefer module encapsulation.
-- Keep breakpoints and state near the module they affect.
+---
 
-## Practical Refactor Heuristics
+## 3. Modifiers vs standalone modules
 
-- Rename by meaning, not appearance.
-- Replace deep selector chains with explicit component classes.
-- Keep specificity low.
-- Prefer maintainable duplication over risky shared abstractions.
-- Ensure deletability: code should be easy to remove when no longer needed.
+Use a `--modifier` only for minor visual tweaks on the same structure. When layout, markup structure or responsive behaviour diverges, extract a dedicated module instead of piling overrides onto a modifier.
+
+**Valid modifier (small visual delta):**
+
+```html
+<button class="button button--primary" type="button">Checkout</button>
+<button class="button button--secondary" type="button">Cancel</button>
+```
+
+```css
+.button { padding: 0.5rem 1rem; border-radius: 4px; }
+.button--primary { background: #1d4ed8; color: #fff; }
+.button--secondary { background: #e5e7eb; color: #111827; }
+```
+
+**When to split into a new module:** If a "compact basket" in the header drops product thumbnails, uses a popover layout and has different typography from the checkout `.basket`, name it `.miniBasket` rather than `.basket--mini`.
+
+---
+
+## 4. Decoupling JavaScript behaviour from module CSS
+
+Two modules often share interactive behaviour (such as toggling visibility or collapsible panels) while needing different visual transitions (for example, one slides down on mobile only, while another hides immediately at all viewports).
+
+```html
+<div class="searchFilter" data-module="collapsible" data-state-class="searchFilter-isCollapsed">
+  <button class="searchFilter-toggle" type="button" aria-expanded="true">Filters</button>
+  <div class="searchFilter-body">...</div>
+</div>
+```
+
+```css
+.searchFilter-isCollapsed .searchFilter-body {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .searchFilter-isCollapsed .searchFilter-body {
+    display: block; /* Always visible on desktop despite collapsed mobile state */
+  }
+}
+```
+
+A global state class (`.isHidden { display: none; }`) is appropriate only when both behaviour and visual rendering are identical across every module in the application.
+
+---
+
+## 5. Parallel versioning for A/B tests and migrations
+
+Never interleave `.basket-v2` override selectors inside `.basket`. Duplicate the module into `.basket2` so both versions remain isolated and deleting the retired version is a single-block deletion.
+
+```html
+<!-- Variant A -->
+<div class="basket">
+  <h2 class="basket-title">Your basket</h2>
+</div>
+
+<!-- Variant B -->
+<div class="basket2">
+  <h2 class="basket2-title">Bag summary</h2>
+</div>
+```
+
+Once Variant B wins, delete `.basket` rules and either keep `.basket2` or rename it to `.basket` in one pass.
+
+---
+
+## 6. Co-located `@media` queries
+
+Keep responsive rules inside the module section rather than scattering module styles across viewport-named stylesheets (`mobile.css`, `desktop.css`).
+
+```css
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 48em) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+```
