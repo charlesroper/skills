@@ -7,6 +7,7 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 ## Skills in this repo
 
 - `on-writing-well`: Context-aware writing and editing across four Surfaces (`Longform Prose`, `Technical Docs & READMEs`, `Web & Content Design` and `UX & Microcopy`), grounded in William Zinsser's *On Writing Well* and modern UX/content design books, with a catalogue of AI writing tropes to avoid.
+- `ste-80`: Write and edit operational software documentation, runbooks, CLI specs, API guides, and troubleshooting steps using an 80% implementation of ASD-STE100 (Simplified Technical English).
 - `cbeams-git-commit-messages`: Commit message guidance based on Chris Beams'
   seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
@@ -26,6 +27,8 @@ skills/
       tropes.md
       ux-microcopy.md
       web-content-design.md
+  ste-80/
+    SKILL.md
   cbeams-git-commit-messages/
     SKILL.md
   maintainable-css/

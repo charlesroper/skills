@@ -6,6 +6,9 @@ All notable changes to this repository are documented in this file.
 
 ### Added
 
+- `ste-80`: Add standalone skill for operational software documentation, runbooks,
+  CLI specs, API guides and troubleshooting steps using an 80% implementation
+  of ASD-STE100 (Simplified Technical English).
 - `on-writing-well`: Add context-aware routing across four writing Surfaces with
   disclosed reference playbooks (`references/longform-prose.md`,
   `references/technical-docs.md`, `references/web-content-design.md` and
