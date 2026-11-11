@@ -1,0 +1,3 @@
+# Multi-surface architecture with progressive disclosure for `on-writing-well`
+
+`on-writing-well` serves as the repository's primary writing skill across four Surfaces: `Longform Prose`, `Technical Docs & READMEs`, `Web & Content Design` and `UX & Microcopy`. Splitting into four separate skills would multiply always-loaded skill descriptions, while inlining every rule into `SKILL.md` would cause context sprawl and conflicting layout rules. Instead, `on-writing-well/SKILL.md` holds the 4-step workflow, the Universal Core and the verbatim `tropes.fyi` block, and discloses Surface-specific playbooks in `on-writing-well/references/*.md`.
