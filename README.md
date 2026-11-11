@@ -6,8 +6,8 @@ Small collection of [agent skills](https://agentskills.io/) used to improve writ
 
 ## Skills in this repo
 
-- `on-writing-well`: concise, reader-focused technical documentation guidance, with a catalogue of AI writing tropes to avoid.
-- `cbeams-git-commit-messages`: commit message guidance based on Chris Beams'
+- `on-writing-well`: Context-aware writing and editing across four Surfaces (`Longform Prose`, `Technical Docs & READMEs`, `Web & Content Design` and `UX & Microcopy`), grounded in William Zinsser's *On Writing Well* and modern UX/content design books, with a catalogue of AI writing tropes to avoid.
+- `cbeams-git-commit-messages`: Commit message guidance based on Chris Beams'
   seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor, and review CSS and markup.
 - `guardian-style-guide`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving the author's original voice, structure and argument.
@@ -21,7 +21,11 @@ skills/
     SKILL.md
     update_tropes.py
     references/
+      longform-prose.md
+      technical-docs.md
       tropes.md
+      ux-microcopy.md
+      web-content-design.md
   cbeams-git-commit-messages/
     SKILL.md
   maintainable-css/

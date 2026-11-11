@@ -6,9 +6,16 @@ All notable changes to this repository are documented in this file.
 
 ### Added
 
+- `on-writing-well`: Add context-aware routing across four writing Surfaces with
+  disclosed reference playbooks (`references/longform-prose.md`,
+  `references/technical-docs.md`, `references/web-content-design.md` and
+  `references/ux-microcopy.md`) blending William Zinsser's *On Writing Well* with
+  *Content Design* (Sarah Winters), *Letting Go of the Words* (Janice Redish),
+  *Strategic Writing for UX* (Torrey Podmajersky), *Writing Is Designing*
+  (Michael J. Metts and Andy Welfle) and *Microcopy: The Complete Guide*
+  (Kinneret Yifrah).
 - `project-narrative`: Add skill for writing and maintaining evidence-linked
   project narratives (NARRATIVE.md) in human and agent-friendly blog post format.
-
 - `on-writing-well`: Add the 49-pattern AI writing tropes catalogue from
   tropes.fyi as `references/tropes.md`, with a summary checklist in `SKILL.md`.
 - `on-writing-well`: Add `update_tropes.py`, a standard-library script that
@@ -26,5 +33,9 @@ All notable changes to this repository are documented in this file.
 
 ### Changed
 
+- `on-writing-well`: Refactor `SKILL.md` using `writing-for-agents` principles
+  (explicit 4-step procedure with completion criteria, context intake prompt when
+  Surface or Reader Job is ambiguous, Universal Core Zinsser mechanics and
+  progressive disclosure to `references/*.md`).
 - `on-writing-well`: Replace unicode arrows in the examples with plain prose,
   matching the tropes guidance now included in the skill.
