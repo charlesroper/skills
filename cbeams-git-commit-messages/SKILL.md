@@ -9,9 +9,9 @@ metadata:
 
 ## Purpose
 
-Help the user write, revise or review Git commit messages that are easy to scan, consistent across a repo, and informative in history.
+Help the user write, revise or review Git commit messages that are easy to scan, consistent across a repo and informative in history.
 
-In the **Editorial Pipeline**, `cbeams-git-commit-messages` serves as Stage 1 drafting for commit messages.
+In the **Editorial Pipeline**, `cbeams-git-commit-messages` serves as Stage 1 drafting for commit messages. Commit messages are exempt from the Stage 2 Sub-Editor Gate.
 
 ## When to use
 
@@ -23,7 +23,7 @@ Use this skill whenever:
 
 ## Procedure
 
-1. **Analyze the change**: Read the diff, patch or summary of changes. If context is missing, ask the user in a single turn for a short summary of what changed and why, or the diff itself. *Completion: Key changes, technical intent and motivation are understood.*
+1. **Analyse the change**: Read the diff, patch or summary of changes. If context is missing, ask the user in a single turn for a short summary of what changed and why, or the diff itself. *Completion: The single controlling change and the reason for it can be stated in one sentence.*
 2. **Draft the subject line**: Write a single line in the imperative mood (eg `Add`, `Fix`, `Refactor`, `Remove`, `Update`). Capitalise the first word, omit trailing full stops, and aim for 50 characters or fewer (72 characters maximum). Prefer rewriting over truncation. *Completion: Imperative subject line under 50 characters (max 72) with no trailing punctuation.*
 3. **Draft the body**: Include a body only if the change needs explanation beyond the subject line. Separate subject and body with a single blank line. Wrap lines at 72 characters. Explain what changed and why it changed (the diff shows how). Use short paragraphs separated by a single blank line, or concise bullet points. *Completion: Body explains what and why wrapped at 72 characters, or is omitted when the subject line suffices.*
 4. **Add issue footer**: If an issue or ticket reference is provided, append it after a blank line using tracker conventions (eg `Fixes #123`, `Refs #123` or repository tracker format). Never invent issue references. *Completion: Provided issue references are appended as footers separated by a single blank line.*

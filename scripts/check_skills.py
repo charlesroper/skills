@@ -320,11 +320,20 @@ def check_readme_registration(repo_root: Path, skill_names: set[str]) -> list[st
         skills_section = match.group(1)
 
     for skill_name in sorted(skill_names):
-        # Match skill name in backticks, brackets, or word boundaries
-        pattern = rf"[`'\"\[\b]{re.escape(skill_name)}[`'\"\]\b]"
+        # Match skill name in backticks, quotes, brackets, or word boundaries
+        pattern = rf"(?:^|[`'\"\[\s]|\b){re.escape(skill_name)}(?:[`'\"\]\s]|\b|$)"
         if not re.search(pattern, skills_section):
             violations.append(
                 f"Skill '{skill_name}' is not registered in root README.md skills list"
+            )
+
+    # Check that skills listed in README also exist as directories with SKILL.md
+    readme_skills = set(re.findall(r"^[*-]\s+`?([a-zA-Z0-9_-]+)`?:", skills_section, re.MULTILINE))
+    for r_skill in sorted(readme_skills):
+        skill_dir = repo_root / r_skill
+        if not (skill_dir / "SKILL.md").is_file():
+            violations.append(
+                f"README lists skill '{r_skill}', but '{r_skill}/SKILL.md' does not exist"
             )
 
     return violations

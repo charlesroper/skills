@@ -270,6 +270,35 @@ class TestSkillValidator(unittest.TestCase):
         violations = check_repository(self.repo_path)
         self.assertTrue(any("beta-skill" in v and "README.md" in v for v in violations), violations)
 
+    def test_readme_unquoted_skill_matches(self):
+        """Unquoted skill names in README.md match correctly without regex boundary errors."""
+        make_valid_repo_tree(self.repo_path)
+        readme = Path(self.repo_path) / "README.md"
+        readme.write_text(
+            "# Repository Skills\n\n"
+            "## Skills in this repo\n\n"
+            "- alpha-skill: Description without backticks.\n",
+            encoding="utf-8",
+        )
+
+        violations = check_repository(self.repo_path)
+        self.assertEqual(violations, [])
+
+    def test_readme_lists_missing_skill_dir_flagged(self):
+        """README listing a skill whose directory/SKILL.md does not exist is flagged."""
+        make_valid_repo_tree(self.repo_path)
+        readme = Path(self.repo_path) / "README.md"
+        readme.write_text(
+            "# Repository Skills\n\n"
+            "## Skills in this repo\n\n"
+            "- `alpha-skill`: Description for alpha skill.\n"
+            "- `ghost-skill`: Description for non-existent skill.\n",
+            encoding="utf-8",
+        )
+
+        violations = check_repository(self.repo_path)
+        self.assertTrue(any("ghost-skill" in v for v in violations), violations)
+
     def test_typography_unspaced_em_dash_in_prose(self):
         """Authored markdown containing unspaced em-dash in prose is flagged."""
         make_valid_repo_tree(self.repo_path)
