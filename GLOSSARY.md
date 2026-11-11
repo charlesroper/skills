@@ -23,3 +23,15 @@ _Avoid_: Term definition, prerequisite check
 **Bite, Snack, Meal**:
 Layered content structure for screen foraging where the heading and opening line deliver the immediate answer (bite), scannable subheadings and lists provide key details (snack), and body sections hold full depth (meal).
 _Avoid_: Progressive summary, three-tier layout
+
+**STE-80**:
+An 80% implementation of the ASD-STE100 Simplified Technical English standard for high-stress operational and machine-adjacent documentation that enforces strict syntax caps (20 words for instructions, 25 words for descriptions, one action per numbered step, active imperatives, banned `-ing` forms, and immediate `WARNING:` blocks) while permitting modern technical terms.
+_Avoid_: Full ASD-STE100, simplified English, caveman mode
+
+**Editorial Pipeline**:
+The two-stage writing workflow where Stage 1 drafts and structures content (`on-writing-well`, `ste-80`, `project-narrative`, or `cbeams-git-commit-messages`) and Stage 2 applies the Sub-Editor Gate (`guardian-style-guide` and `tropes`).
+_Avoid_: Writing chain, post-processing pass
+
+**Sub-Editor Gate**:
+Stage 2 of the Editorial Pipeline, which enforces house spelling, typography (such as spaced en-dashes ` – ` over em-dashes `—`), capitalisation, number formatting, and trope removal while preserving the draft's structure and argument.
+_Avoid_: Linter pass, style filter
