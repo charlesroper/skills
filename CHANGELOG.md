@@ -36,9 +36,19 @@ All notable changes to this repository are documented in this file.
 
 ### Changed
 
+- `cbeams-git-commit-messages`: Structure into an ordered 5-step procedure with
+  checkable completion criteria and deduplicate instructions, output formatting
+  and quality checks into a unified reference checklist.
+- `guardian-style-guide`: Document role in the Editorial Pipeline as the Stage 2
+  Sub-Editor Gate, add checkable completion criteria to every copy-editing step,
+  and clarify preservation of spaced en-dashes (` – `) over unspaced em-dashes
+  (`—`).
 - `on-writing-well`: Refactor `SKILL.md` using `writing-for-agents` principles
   (explicit 4-step procedure with completion criteria, context intake prompt when
   Surface or Reader Job is ambiguous, Universal Core Zinsser mechanics and
   progressive disclosure to `references/*.md`).
 - `on-writing-well`: Replace unicode arrows in the examples with plain prose,
   matching the tropes guidance now included in the skill.
+- `project-narrative`: Replace duplicated inline summaries of tropes and
+  Guardian style rules in `## Style` with clean context pointers to
+  `on-writing-well` and `guardian-style-guide` as single sources of truth.
