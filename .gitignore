@@ -5,3 +5,8 @@ node_modules/
 __pycache__/
 *.pyc
 .venv/
+
+.projectmem/events.jsonl
+.projectmem/watch.pid
+.projectmem/watch.log
+.projectmem/structure.json
