@@ -2,77 +2,45 @@
 name: cbeams-git-commit-messages
 description: Write clear, consistent Git commit messages following Chris Beams' seven rules. Use when the user asks for a commit message, asks to improve one, or shares a diff and wants commit wording.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # cbeams-git-commit-messages
 
 ## Purpose
 
-Help the user write, revise, or review Git commit messages that are easy to scan, consistent across a repo, and informative in history.
+Help the user write, revise or review Git commit messages that are easy to scan, consistent across a repo, and informative in history.
 
-This skill supports both single-line commits and multi-paragraph commit bodies.
+In the **Editorial Pipeline**, `cbeams-git-commit-messages` serves as Stage 1 drafting for commit messages.
 
 ## When to use
 
-Use this skill whenever the user:
-- asks for a commit message,
-- pastes a diff / summary and asks what to commit,
-- asks you to improve a commit message,
-- asks you to review whether a commit message is "good".
+Use this skill whenever:
+- Asking for a commit message for staged changes or a diff.
+- Pasting a diff or summary and asking what to commit.
+- Asking to improve, revise or shorten an existing commit message.
+- Reviewing whether a commit message follows Chris Beams' seven rules.
 
-## Instructions
+## Procedure
 
-When producing a commit message:
+1. **Analyze the change**: Read the diff, patch or summary of changes. If context is missing, ask the user in a single turn for a short summary of what changed and why, or the diff itself. *Completion: Key changes, technical intent and motivation are understood.*
+2. **Draft the subject line**: Write a single line in the imperative mood (eg `Add`, `Fix`, `Refactor`, `Remove`, `Update`). Capitalise the first word, omit trailing full stops, and aim for 50 characters or fewer (72 characters maximum). Prefer rewriting over truncation. *Completion: Imperative subject line under 50 characters (max 72) with no trailing punctuation.*
+3. **Draft the body**: Include a body only if the change needs explanation beyond the subject line. Separate subject and body with a single blank line. Wrap lines at 72 characters. Explain what changed and why it changed (the diff shows how). Use short paragraphs separated by a single blank line, or concise bullet points. *Completion: Body explains what and why wrapped at 72 characters, or is omitted when the subject line suffices.*
+4. **Add issue footer**: If an issue or ticket reference is provided, append it after a blank line using tracker conventions (eg `Fixes #123`, `Refs #123` or repository tracker format). Never invent issue references. *Completion: Provided issue references are appended as footers separated by a single blank line.*
+5. **Verify against the quality checklist and deliver directly**: Verify against the **Commit quality checklist** below. Deliver raw text directly without markdown fences, code blocks, quote marks or conversational preamble. *Completion: All quality checks pass and output is delivered directly as plain text.*
 
-1. Subject line rules
-   - Output a single subject line first.
-   - Use the imperative mood (a command) - e.g. "Add", "Fix", "Refactor", "Remove", "Update".
-   - Capitalise the first character.
-   - Do not end with a full stop.
-   - Aim for 50 characters or fewer.
-   - Treat 72 characters as a hard ceiling - if it will exceed 72, rewrite.
-   - Prefer rewriting over truncation.
-   - Do not sacrifice clarity only to force 50 characters; preserve meaning.
-   - Avoid past tense subjects such as "Added" or "Fixed".
-   - Avoid vague subjects such as "Update stuff" or "Misc changes".
-   - Only use ASCII characters in the subject and body.
+## Commit quality checklist
 
-2. Body rules
-   - Only include a body if it adds value.
-   - Separate subject and body with a single blank line.
-   - Wrap body lines at 72 characters.
-   - Explain what changed and why it changed.
-   - Avoid explaining how it changed (the diff already shows how).
-   - Use short paragraphs separated by blank lines when there are multiple ideas.
-   - Separate paragraphs in the body with a single blank line.
-   - Prefer bullet points to organize multiple points; keep each bullet concise.
-   - Use this structure when helpful: Context -> Change -> Reason/impact.
+Before delivering, verify the message against Chris Beams' seven rules and repository standards:
 
-3. Optional footer
-   - If the user provides an issue / ticket reference, include it at the end as a footer
-     line (or lines), after a blank line.
-   - Prefer forms like:
-     - "Refs: #123"
-     - "Resolves: #123"
-     - "Fixes: #123"
-   - If the repo uses another tracker format (for example, "ABC-123"), preserve that
-     format instead of converting to "#123".
-   - Do not invent issue references.
-
-## Output format
-
-Always output:
-- The subject line on the first line.
-- Then the body (if any), starting after one blank line.
-- No surrounding quotation marks.
-- No Markdown formatting.
-- Separate paragraphs in the body with a single blank line.
-
-If the user provides insufficient context (no summary of changes), ask for:
-- a one-two sentence summary of what changed, why it changed, and expected impact or risk,
-or
-- the diff / list of files changed.
+1. **Separate subject from body with a blank line:** Always place a single blank line between subject and body, and between body and footers.
+2. **Limit subject line to 50 characters:** Target 50 characters or fewer; never exceed 72 characters. Prefer rewriting over truncation.
+3. **Capitalise the subject line:** Begin the subject with an uppercase letter.
+4. **Do not end the subject line with a full stop:** Omit trailing punctuation from the subject line.
+5. **Use the imperative mood in the subject line:** Use imperative verbs (`Add`, `Fix`, `Refactor`, `Remove`, `Update`), avoiding past tense (`Added`, `Fixed`) or vague wording (`Update stuff`).
+6. **Wrap the body at 72 characters:** Wrap all body paragraphs and bullet lines at 72 columns.
+7. **Use the body to explain what and why vs how:** Focus on motivation, context and impact; leave the implementation mechanics to the diff.
+8. **Plain text delivery:** Output raw ASCII text only – no Markdown code blocks, quotation marks or trailing whitespace.
 
 ## Examples
 
@@ -96,14 +64,6 @@ Improve commit-message skill and examples
   truncation to preserve meaning
 - Remove frontmatter tags to comply with the spec
 
-Bad -> better rewrite:
+Bad to better rewrite:
 Bad: Updated things
 Better: Update deployment health check defaults
-
-## Quality checks (do before finalising)
-
-- Subject <= 50 characters where possible; never > 72.
-- Subject is imperative, capitalised, and has no trailing full stop.
-- If there is a body: wrapped at 72 characters, explains what + why, not how.
-- Output has no Markdown formatting, quotation marks, or code fences.
-- Output has no trailing whitespace.

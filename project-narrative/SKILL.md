@@ -78,16 +78,12 @@ Use these sections in this order. Rename them only when the project's language d
 
 ## Style
 
-Apply the repository's style guide. When the `on-writing-well`, `guardian-style-guide` and `tropes` skills are installed, apply all three. When the repository has no style guide, use plain technical prose: active voice, one idea per sentence, concrete nouns and verbs.
+Apply the repository's style guide. When the repository has no style guide, use plain technical prose: active voice, one idea per sentence, concrete nouns and verbs.
 
-For British English, apply Guardian style: `-ise` endings, no Oxford comma, dates as `31 October 2026` and numbers one to nine spelled out.
+In the **Editorial Pipeline**, `project-narrative` serves as Stage 1 drafting. Refer to sibling skills as the single sources of truth:
 
-Write without tropes:
-
-- State the claim directly. Replace "not X, but Y" with the claim itself.
-- Explain with evidence in place of metaphor.
-- Use literal description in place of aphorism and personification.
-- Choose specific words in place of stock phrases such as "journey", "testament", "delve", "at its core", "the real story" and "little did they know".
+- **Prose discipline and tropes:** Follow `on-writing-well` for core Zinsser mechanics (humanity, clarity, unity, clutter removal) and trope elimination (no stock phrases, no false drama, no empty framing).
+- **British English and house style:** Follow `guardian-style-guide` as the Stage 2 Sub-Editor Gate for UK orthography (`-ise` endings, no Oxford comma), dates, numbers and spaced en-dashes (` – `).
 
 ## Writing rules
 
