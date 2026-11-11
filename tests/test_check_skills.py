@@ -384,6 +384,21 @@ class TestSkillValidator(unittest.TestCase):
         violations = check_repository(self.repo_path)
         self.assertEqual(violations, [])
 
+    def test_frontmatter_unquoted_colon_flagged(self):
+        """Unquoted colon inside frontmatter scalar is flagged as syntax hazard."""
+        make_valid_repo_tree(self.repo_path)
+        skill_md = Path(self.repo_path) / "alpha-skill" / "SKILL.md"
+        skill_md.write_text(
+            "---\n"
+            "name: alpha-skill\n"
+            "description: Write text across: Key1 and Key2 without quotes.\n"
+            "---\n\n"
+            "# Alpha Skill\n",
+            encoding="utf-8",
+        )
+        violations = check_repository(self.repo_path)
+        self.assertTrue(any("Unquoted ': '" in v for v in violations), violations)
+
     def test_cli_execution_exit_codes(self):
         """CLI returns exit code 0 on valid repository and 1 on invalid repository."""
         check_script = SCRIPTS_DIR / "check_skills.py"

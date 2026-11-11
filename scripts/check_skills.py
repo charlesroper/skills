@@ -85,6 +85,8 @@ def parse_frontmatter(content: str) -> tuple[dict[str, object] | None, str | Non
             else:
                 if (v.startswith('"') and v.endswith('"')) or (v.startswith("'") and v.endswith("'")):
                     v = v[1:-1]
+                elif ": " in v:
+                    return None, f"Unquoted ': ' in frontmatter value for '{k}' causes YAML parse error"
                 data[k] = v
                 current_key = k
                 multiline_mode = None
