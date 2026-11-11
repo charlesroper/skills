@@ -6,31 +6,35 @@ Collection of [agent skills](https://agentskills.io/) for writing, editing and w
 
 ## Installation
 
-### Global (all projects)
+### Global installation (all projects)
 
-```bash
-npx skills add -g charlesroper/skills
-```
+1. Install all skills across all agents:
 
-Install a single skill:
+   ```bash
+   npx skills add -g charlesroper/skills
+   ```
 
-```bash
-npx skills add -g charlesroper/skills --skill=ste-80
-```
+2. To install one skill, add the `--skill` option:
 
-### Project (single repository)
+   ```bash
+   npx skills add -g charlesroper/skills --skill=ste-80
+   ```
 
-Inside the repository root:
+### Project installation (single repository)
 
-```bash
-npx skills add charlesroper/skills
-```
+1. Open a terminal in the target repository root directory.
 
-Configure agent routing in `AGENTS.md`:
+2. Install skills into the repository:
 
-```text
-/setup-writing-framework
-```
+   ```bash
+   npx skills add charlesroper/skills
+   ```
+
+3. Configure agent pipeline rules in `AGENTS.md`:
+
+   ```text
+   /setup-writing-framework
+   ```
 
 ## Skills in this repo
 
