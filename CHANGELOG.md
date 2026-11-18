@@ -54,6 +54,11 @@ All notable changes to this repository are documented in this file.
   Sub-Editor Gate, add checkable completion criteria to every copy-editing step,
   and clarify preservation of spaced en-dashes (` – `) over unspaced em-dashes
   (`—`).
+- `maintainable-css`: Rewrite `SKILL.md` around an explicit 4-step procedure with
+  completion criteria, the `lowerCamelCase` delimiter grammar, a standalone
+  module boundary test and ARIA/state pairing rules. Replace the duplicated
+  manual summary with concrete before-and-after patterns in
+  `references/maintainable-css-manual.md`.
 - `on-writing-well`: Refactor `SKILL.md` using `writing-for-agents` principles
   (explicit 4-step procedure with completion criteria, context intake prompt when
   Surface or Reader Job is ambiguous, Universal Core Zinsser mechanics and
