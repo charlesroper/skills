@@ -50,6 +50,9 @@ All notable changes to this repository are documented in this file.
 - `cbeams-git-commit-messages`: Structure into an ordered 5-step procedure with
   checkable completion criteria and deduplicate instructions, output formatting
   and quality checks into a unified reference checklist.
+- `cbeams-git-commit-messages`: Add Conventional Commits compatibility for
+  subject case, length counting, trailer syntax and hand-off to an executor
+  skill.
 - `guardian-style-guide`: Document role in the Editorial Pipeline as the Stage 2
   Sub-Editor Gate, add checkable completion criteria to every copy-editing step,
   and clarify preservation of spaced en-dashes (` – `) over unspaced em-dashes
