@@ -2,35 +2,35 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Collection of [agent skills](https://agentskills.io/) for writing, editing and workflow governance.
+A collection of [agent skills](https://agentskills.io/) for writing, editing and workflow governance.
 
 ## Installation
 
 ### Global installation (all projects)
 
-- Install all skills across all agents:
+- Install all skills globally:
 
   ```bash
   npx skills add -g charlesroper/skills
   ```
 
-- To install one skill, pass the `--skill` option:
+- To install one skill, use `--skill`:
 
   ```bash
-  npx skills add -g charlesroper/skills --skill=ste-80
+  npx skills add -g charlesroper/skills --skill ste-80
   ```
 
 ### Project installation (single repository)
 
 From the target repository root:
 
-1. Install skills into the repository:
+1. Install the skills into the repository:
 
    ```bash
    npx skills add charlesroper/skills
    ```
 
-2. Configure agent pipeline rules in `AGENTS.md`:
+2. Configure the writing framework in `AGENTS.md`:
 
    ```text
    /setup-writing-framework
@@ -38,13 +38,13 @@ From the target repository root:
 
 ## Skills in this repo
 
-- `on-writing-well`: Context-aware writing and editing across four surfaces (`Longform Prose`, `Technical Docs & READMEs`, `Web & Content Design` and `UX & Microcopy`), grounded in William Zinsser's *On Writing Well* and modern UX and content design practices, with a catalogue of AI writing tropes to avoid.
-- `ste-80`: Write and edit operational software documentation, runbooks, CLI flag specifications, API guides and troubleshooting steps using an 80% implementation of ASD-STE100 (Simplified Technical English).
+- `on-writing-well`: Context-aware writing and editing across four surfaces: longform prose, technical docs and READMEs, web and content design, and UX and microcopy. Grounded in William Zinsser's *On Writing Well* and modern content design practice, with a catalogue of AI writing tropes to avoid.
+- `ste-80`: Write and edit operational software documentation, runbooks, CLI flag specifications, API guides and troubleshooting steps. Implements 80% of ASD-STE100 (Simplified Technical English).
 - `cbeams-git-commit-messages`: Git commit message guidelines based on Chris Beams' seven rules.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor and review CSS and markup.
 - `guardian-style-guide`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving authorial voice, structure and argument.
 - `project-narrative`: Write and maintain `NARRATIVE.md`, the evidence-linked story of a project for humans and agents.
-- `setup-writing-framework`: Scaffold the two-stage Editorial Pipeline into a repository `AGENTS.md` or `CLAUDE.md` file, routing Stage 1 drafting (`on-writing-well`, `ste-80`, `project-narrative`, `cbeams-git-commit-messages`) and Stage 2 sub-editing (`guardian-style-guide`).
+- `setup-writing-framework`: Scaffold the two-stage Editorial Pipeline in a project's `AGENTS.md` or `CLAUDE.md`. It routes Stage 1 drafting to `on-writing-well`, `ste-80`, `project-narrative` or `cbeams-git-commit-messages`, then runs `guardian-style-guide` for Stage 2 sub-editing.
 
 ## Structure
 
