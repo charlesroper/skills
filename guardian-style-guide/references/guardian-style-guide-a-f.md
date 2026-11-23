@@ -2,7 +2,7 @@
 
 Source: <https://www.theguardian.com/info/series/the-guardian-style-guide>
 
-Retrieved: 2026-11-15
+Retrieved: 2026-11-23
 
 ## Contents
 
@@ -282,7 +282,7 @@ Aleister Crowley (late satanist)
 
 **A-levels**
 
-**Al Fayed, Mohamed** — former owner of Harrods and Fulham FC (Fayed after first mention); the son who died in Paris in 1997 was Dodi Fayed
+**Al Fayed, Mohamed** — late owner of Harrods and Fulham FC; the son who died in Paris in 1997 was Dodi Fayed
 
 **Alfonsín, Raúl** — (1927-2009) president of Argentina from 1983-89
 
@@ -487,9 +487,11 @@ Animal breeds are usually lowercase, eg gloucestershire old spot, friesian, belt
 
 **antidepressants**
 
-**antidisestablishmentarianism** — position adopted by those opposed to the disestablishment of the Church of England.
-
+**antidisestablishmentarianism**\
+position adopted by those opposed to the disestablishment of the Church of England.\
 Not a good headline word
+
+**Antigua and Barbuda** — a state in the Caribbean, made up of the islands of Antigua, Barbuda and Redonda
 
 **antihero**
 
@@ -575,7 +577,7 @@ Some exceptions: by convention, Allah is written as one word and capitalised; an
 
 **abdul, abu and bin** — Arabic names can include more informal terms: a man might become known after the birth of his first son as “abu Ahmad”, and a woman as “umm Ahmad”, the father or mother of Ahmad. These are not generally self-contained names, but are connected to the name that follows. Abdul means “servant of … “ or “worshipper of” (usually followed by one of the 99 names of Allah) and so is not usually used on its own. These are generally lower case, but should not be dropped after the first mention. Despite the above, “Abdul” can sometimes be a standalone name in English: names such as Paula Abdul come from a different root. This is more common among non-Arab Muslims.
 
-**Muhammad** — Our style for the prophet’s name and for most Muhammads living in Arab countries, though where someone’s preferred spelling is known we respect it, eg Mohamed Al Fayed, Mohamed ElBaradei
+**Muhammad** — Our style for the prophet’s name and for most Muhammads living in Arab countries, though where someone’s preferred spelling is known we respect it, eg Mohamed ElBaradei
 
 **Muhandis/Mohandes, Qadi** — Be wary of names where the first word is Muhandis or Qadi: these are honorary titles, meaning engineer and judge respectively
 
@@ -1783,9 +1785,9 @@ Do not abbreviate to “Caymans”
 
 **celibate, celibacy** — strictly refer to being unmarried (especially for religious reasons), but it is now acceptable to use them to mean abstaining from sexual intercourse
 
-**cellphone** — mobile phone in British English
+**cellphone** — or just phone. Mobile phone in British English
 
-**celsius** — without degree symbol and with fahrenheit equivalent in brackets: 23C (73F), -3C (27F), etc; to convert celsius to fahrenheit, multiply by 9, divide by 5, then add 32; to convert fahrenheit to celsius, subtract 32, divide the answer by 9, then multiply by 5 (or use one of the many online calculators)
+**celsius** — without degree symbol and with fahrenheit equivalent in brackets: 23C (73F), -3C (27F), etc
 
 **Celtic** — not Glasgow Celtic
 
@@ -2716,7 +2718,7 @@ denier is also a unit of weight for fibre, eg 10-denier tights
 
 **departments of state** — British government ministries (but not ministers) take initial caps.
 
-Department for Business, Innovation, Science and Technology (DBIST)\
+Department for Business, Innovation, Science and Trade (DBIST)\
 Department for Digital, Culture, Media and Sport (DCMS)\
 Department for Education (DfE)\
 Department for Energy Security and Net Zero (DESNZ)\

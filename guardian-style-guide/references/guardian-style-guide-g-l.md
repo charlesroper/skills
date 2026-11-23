@@ -2,7 +2,7 @@
 
 Source: <https://www.theguardian.com/info/series/the-guardian-style-guide>
 
-Retrieved: 2026-10-25
+Retrieved: 2026-11-23
 
 ## Contents
 
@@ -1575,7 +1575,7 @@ In Scotland, judges are always Lord or Lady. So Lord Smith, Lady Brown. Sheriffs
 
 **knockout** — noun; **knock out** verb
 
-**knots** — measure of nautical miles per hour; do not say knots per hour
+**knots** — measure of nautical miles per hour, do not say knots per hour. Convert to mph in brackets
 
 **knowhow**
 

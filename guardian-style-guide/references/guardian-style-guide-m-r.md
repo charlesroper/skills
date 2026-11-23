@@ -2,7 +2,7 @@
 
 Source: <https://www.theguardian.com/info/series/the-guardian-style-guide>
 
-Retrieved: 2026-11-15
+Retrieved: 2026-11-23
 
 ## Contents
 
@@ -2525,7 +2525,7 @@ In a UK setting use Roman Catholic in describing Roman Catholic organisations an
 
 **round up** — verb; **roundup** noun
 
-**routeing or routing?** — They are routeing buses through the city centre after the routing of the protesters
+**routing** — not routeing
 
 **Rovers Return, the** — (no apostrophe) Coronation Street’s pub; it sells Newton & Ridley beer
 
