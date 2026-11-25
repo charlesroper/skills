@@ -6,9 +6,10 @@ All notable changes to this repository are documented in this file.
 
 ### Changed
 
-- `cbeams-git-commit-messages`: Body wrapping now follows the repository's
-  commit policy, with 72 columns as the default when no policy exists. Removes
-  the conflict with policies that do not require hard wrapping.
+- `cbeams-git-commit-messages`: Add an explicit precedence order (user request,
+  repository policy, lint configuration, skill defaults), define strict mode as
+  an opt-in, and stop claiming strict adherence to Chris Beams' seven rules.
+  Body wrapping now defaults to none.
 
 ### Added
 

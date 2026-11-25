@@ -1,8 +1,8 @@
 ---
 name: cbeams-git-commit-messages
-description: Write clear, consistent Git commit messages following Chris Beams' seven rules. Use when the user asks for a commit message, asks to improve one, or shares a diff and wants commit wording.
+description: Write Git commit messages using Chris Beams' rules as defaults, with Conventional Commits support. Use when the user asks for a commit message, asks to improve one, or shares a diff and wants commit wording.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # cbeams-git-commit-messages
@@ -19,26 +19,37 @@ Use this skill whenever:
 - Asking for a commit message for staged changes or a diff.
 - Pasting a diff or summary and asking what to commit.
 - Asking to improve, revise or shorten an existing commit message.
-- Reviewing whether a commit message follows Chris Beams' seven rules.
+- Reviewing a commit message against these rules and the repository's policy.
+
+## Precedence
+
+Apply the first rule that exists:
+
+1. An explicit user request, such as "strict Chris Beams" or "wrap the body at 72".
+2. The repository's `AGENTS.md`, `Commit policy:` line, or commit policy file.
+3. Its lint configuration, enforced by running the linter, not by copying its rules.
+4. The defaults below: header at most 72 characters, body without hard wrapping.
+
+**Strict mode** applies when the user or repository asks for it. Use a subject of at most 50 characters and wrap the body at 72 columns. Otherwise leave the body unwrapped.
 
 ## Procedure
 
 1. **Analyse the change**: Read the diff, patch or summary of changes. If context is missing, ask the user in a single turn for a short summary of what changed and why, or the diff itself. *Completion: The single controlling change and the reason for it can be stated in one sentence.*
-2. **Draft the subject line**: Write a single line in the imperative mood (eg `Add`, `Fix`, `Refactor`, `Remove`, `Update`). Capitalise the first word, omit trailing full stops, and aim for 50 characters or fewer (72 characters maximum). Prefer rewriting over truncation. If the repository uses Conventional Commits, the `type(scope): ` prefix is part of the subject line; use a lowercase type and a lowercase imperative summary, count the whole header toward the 72-character maximum, and follow this lowercase rule over the capitalisation instruction above. *Completion: Imperative subject line under 50 characters (max 72) with no trailing punctuation and the repository's case convention.*
-3. **Draft the body**: Include a body only if the change needs explanation beyond the subject line. Separate subject and body with a single blank line. Explain what changed and why it changed (the diff shows how). Use short paragraphs separated by a single blank line, or concise bullet points. Follow the repository's commit policy for body wrapping; when it says nothing, 72 columns is a safe default. *Completion: Body explains what and why, with wrapping that follows repository policy or the 72-column default, or is omitted when the subject line suffices.*
+2. **Draft the subject line**: Write a single line in the imperative mood (eg `Add`, `Fix`, `Refactor`, `Remove`, `Update`). Capitalise the first word, omit trailing full stops, and aim for 50 characters or fewer (72 characters maximum; 50 in strict mode). Prefer rewriting over truncation. If the repository uses Conventional Commits, the `type(scope): ` prefix is part of the subject line; use a lowercase type and a lowercase imperative summary, count the whole header toward the maximum, and follow this lowercase rule over the capitalisation instruction above. *Completion: Imperative subject line under the applicable maximum with no trailing punctuation and the repository's case convention.*
+3. **Draft the body**: Include a body only if the change needs explanation beyond the subject line. Separate subject and body with a single blank line. Explain what changed and why it changed (the diff shows how). Use short paragraphs separated by a single blank line, or concise bullet points. Follow the repository's commit policy for body wrapping; when it says nothing, do not hard-wrap unless strict mode applies. *Completion: Body explains what and why, with wrapping that follows repository policy or the default, or is omitted when the subject line suffices.*
 4. **Add issue footer**: If an issue or ticket reference is provided, append it after a blank line using tracker conventions (eg `Fixes #123`, `Refs #123` or repository tracker format). For Git trailers, use `Token: value`, for example `Fixes: #123`; the form `Fixes #123` is valid for GitHub but is not a Git trailer. Never invent issue references. *Completion: Provided issue references are appended as footers separated by a single blank line, using trailer syntax where Git must read them.*
 5. **Verify against the quality checklist and deliver directly**: Verify against the **Commit quality checklist** below. Deliver raw text directly without markdown fences, code blocks, quote marks or conversational preamble. When another skill or the user will run `git commit`, stop after drafting and hand over the message; do not deliver the raw text as the final answer, and do not stage or commit. *Completion: All quality checks pass and the message is either delivered directly as plain text or handed to the executor.*
 
 ## Commit quality checklist
 
-Before delivering, verify the message against Chris Beams' seven rules and repository standards:
+Before delivering, verify the message against these rules and repository standards:
 
 1. **Separate subject from body with a blank line:** Always place a single blank line between subject and body, and between body and footers.
-2. **Limit subject line to 50 characters:** Target 50 characters or fewer; never exceed 72 characters. Prefer rewriting over truncation.
+2. **Limit subject line to 50 characters:** Target 50 characters or fewer; never exceed 72 characters (50 in strict mode). Prefer rewriting over truncation.
 3. **Capitalise the subject line:** Begin the subject with an uppercase letter. Under Conventional Commits, use a lowercase type and a lowercase summary instead.
 4. **Do not end the subject line with a full stop:** Omit trailing punctuation from the subject line.
 5. **Use the imperative mood in the subject line:** Use imperative verbs (`Add`, `Fix`, `Refactor`, `Remove`, `Update`), avoiding past tense (`Added`, `Fixed`) or vague wording (`Update stuff`).
-6. **Follow the body-wrapping rule:** Use the repository's commit policy. If it is silent, wrap body paragraphs and bullet lines at 72 columns.
+6. **Follow the body-wrapping rule:** Use the repository's commit policy. If it is silent, do not hard-wrap; under strict mode, wrap at 72 columns.
 7. **Use the body to explain what and why vs how:** Focus on motivation, context and impact; leave the implementation mechanics to the diff.
 8. **Plain text delivery:** Output raw ASCII text only – no Markdown code blocks, quotation marks or trailing whitespace.
 
