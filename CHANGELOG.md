@@ -4,6 +4,12 @@ All notable changes to this repository are documented in this file.
 
 ## Unreleased
 
+### Changed
+
+- `cbeams-git-commit-messages`: Body wrapping now follows the repository's
+  commit policy, with 72 columns as the default when no policy exists. Removes
+  the conflict with policies that do not require hard wrapping.
+
 ### Added
 
 - `setup-writing-framework`: Add interactive scaffolding skill to configure
