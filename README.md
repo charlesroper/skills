@@ -40,7 +40,7 @@ From the target repository root:
 
 - `on-writing-well`: Context-aware writing and editing across four surfaces: longform prose, technical docs and READMEs, web and content design, and UX and microcopy. Grounded in William Zinsser's *On Writing Well* and modern content design practice, with a catalogue of AI writing tropes to avoid.
 - `ste-80`: Write and edit operational software documentation, runbooks, CLI flag specifications, API guides and troubleshooting steps. Implements 80% of ASD-STE100 (Simplified Technical English).
-- `cbeams-git-commit-messages`: Git commit message guidelines based on Chris Beams' seven rules.
+- `cbeams-git-commit-messages`: Git commit message guidelines based on Chris Beams' rules, with repository policy and lint configuration taking precedence.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor and review CSS and markup.
 - `guardian-style-guide`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving authorial voice, structure and argument.
 - `project-narrative`: Write and maintain `NARRATIVE.md`, the evidence-linked story of a project for humans and agents.
