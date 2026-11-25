@@ -10,6 +10,9 @@ All notable changes to this repository are documented in this file.
   repository policy, lint configuration, skill defaults), define strict mode as
   an opt-in, and stop claiming strict adherence to Chris Beams' seven rules.
   Body wrapping now defaults to none.
+- `cbeams-git-commit-messages`: Collapse formatting defaults into a single
+  table, remove duplicated rules, and make running the repository linter part
+  of verification.
 
 ### Added
 
