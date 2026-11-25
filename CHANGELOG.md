@@ -13,6 +13,9 @@ All notable changes to this repository are documented in this file.
 - `cbeams-git-commit-messages`: Collapse formatting defaults into a single
   table, remove duplicated rules, and make running the repository linter part
   of verification.
+- `cbeams-git-commit-messages`: Remove Conventional Commits from the skill.
+  Typed commit styles now enter only through repository policy, keeping the
+  skill limited to Chris Beams' rules.
 
 ### Added
 
