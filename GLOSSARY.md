@@ -13,7 +13,7 @@ The concrete question, decision, or task a reader brings to a piece of writing.
 _Avoid_: User intent, target audience, goal
 
 **Universal Core**:
-The baseline Zinsser and anti-trope writing rules in `on-writing-well/SKILL.md` (humanity, unity, clutter removal, active verbs, concrete nouns, payload-first, and trope avoidance) that apply across every Surface before surface-specific layout and structural rules fire.
+The baseline Zinsser and anti-trope writing rules in `writing-well/SKILL.md` (humanity, unity, clutter removal, active verbs, concrete nouns, payload-first, and trope avoidance) that apply across every Surface before surface-specific layout and structural rules fire.
 _Avoid_: Base rules, global defaults
 
 **Concept Grounding**:
@@ -29,7 +29,7 @@ An 80% implementation of the ASD-STE100 Simplified Technical English standard fo
 _Avoid_: Full ASD-STE100, simplified English, caveman mode
 
 **Editorial Pipeline**:
-The two-stage writing workflow where Stage 1 drafts and structures content (`on-writing-well`, `ste-80`, `project-narrative`, or `cbeams-git-commit-messages`) and Stage 2 applies the Sub-Editor Gate (`guardian-style-guide` and `tropes`).
+The two-stage writing workflow where Stage 1 drafts and structures content (`writing-well`, `ste-80`, `project-narrative`, or `cbeams-git-commit-messages`) and Stage 2 applies the Sub-Editor Gate (`style-guardian` and `tropes`).
 _Avoid_: Writing chain, post-processing pass
 
 **Sub-Editor Gate**:

@@ -24,7 +24,7 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch Guardian references
-        working-directory: guardian-style-guide
+        working-directory: style-guardian
         run: |
           python3 guardian_style_guide.py
 
@@ -39,13 +39,13 @@ jobs:
             style guide.
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          branch: update-guardian-style-guide-references
+          branch: update-style-guardian-references
           delete-branch: true
           title: "Update Guardian style guide references"
           body: |
             ## Summary
 
-            Automated weekly sync detected differences between the upstream Guardian style guide and the reference files in `guardian-style-guide/references/`.
+            Automated weekly sync detected differences between the upstream Guardian style guide and the reference files in `style-guardian/references/`.
 
             ## Changes
 

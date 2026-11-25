@@ -6,6 +6,10 @@ All notable changes to this repository are documented in this file.
 
 ### Changed
 
+- Rename `on-writing-well` to `writing-well` and `guardian-style-guide` to
+  `style-guardian`. Behaviour is unchanged. Install the new IDs with
+  `npx skills add -g charlesroper/skills --skill writing-well` or
+  `--skill style-guardian`.
 - `cbeams-git-commit-messages`: Add an explicit precedence order (user request,
   repository policy, lint configuration, skill defaults), define strict mode as
   an opt-in, and stop claiming strict adherence to Chris Beams' seven rules.

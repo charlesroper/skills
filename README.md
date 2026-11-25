@@ -38,13 +38,13 @@ From the target repository root:
 
 ## Skills in this repo
 
-- `on-writing-well`: Context-aware writing and editing across four surfaces: longform prose, technical docs and READMEs, web and content design, and UX and microcopy. Grounded in William Zinsser's *On Writing Well* and modern content design practice, with a catalogue of AI writing tropes to avoid.
+- `writing-well`: Context-aware writing and editing across four surfaces: longform prose, technical docs and READMEs, web and content design, and UX and microcopy. Grounded in William Zinsser's *On Writing Well* and modern content design practice, with a catalogue of AI writing tropes to avoid.
 - `ste-80`: Write and edit operational software documentation, runbooks, CLI flag specifications, API guides and troubleshooting steps. Implements 80% of ASD-STE100 (Simplified Technical English).
 - `cbeams-git-commit-messages`: Git commit message guidelines based on Chris Beams' rules, with repository policy and lint configuration taking precedence.
 - `maintainable-css`: Apply Adam Silver's MaintainableCSS methodology to plan, refactor and review CSS and markup.
-- `guardian-style-guide`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving authorial voice, structure and argument.
+- `style-guardian`: Copy-edit, proofread or write text to adhere to the Guardian and Observer style guide while preserving authorial voice, structure and argument.
 - `project-narrative`: Write and maintain `NARRATIVE.md`, the evidence-linked story of a project for humans and agents.
-- `setup-writing-framework`: Scaffold the two-stage Editorial Pipeline in a project's `AGENTS.md` or `CLAUDE.md`. It routes Stage 1 drafting to `on-writing-well`, `ste-80`, `project-narrative` or `cbeams-git-commit-messages`, then runs `guardian-style-guide` for Stage 2 sub-editing.
+- `setup-writing-framework`: Scaffold the two-stage Editorial Pipeline in a project's `AGENTS.md` or `CLAUDE.md`. It routes Stage 1 drafting to `writing-well`, `ste-80`, `project-narrative` or `cbeams-git-commit-messages`, then runs `style-guardian` for Stage 2 sub-editing.
 
 ## Structure
 
@@ -52,7 +52,7 @@ From the target repository root:
 skills/
   cbeams-git-commit-messages/
     SKILL.md
-  guardian-style-guide/
+  style-guardian/
     SKILL.md
     references/
       guardian-style-guide-a-f.md
@@ -63,7 +63,7 @@ skills/
     SKILL.md
     references/
       maintainable-css-manual.md
-  on-writing-well/
+  writing-well/
     SKILL.md
     update_tropes.py
     references/
